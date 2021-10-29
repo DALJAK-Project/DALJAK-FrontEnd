@@ -1,4 +1,4 @@
-# DAJLAK-BackEnd
+# DAJLAK-FRONTEND
 
 REST API를 이용한 Django 웹 서버 개발
 
