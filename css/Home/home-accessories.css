@@ -1,0 +1,609 @@
+.home_accessories {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 134px;
+    top: 104px;
+    border: 5px dashed white;
+}
+
+.v2_1348 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 87px;
+    background: url("../images/v2_1348.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 860px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.v2_1349 {
+    width: 125px;
+    height: 80px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 2px;
+    overflow: hidden;
+}
+
+.v2_1350 {
+    width: 100%;
+    color: url("../images/v2_1350.png");
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 64px;
+    opacity: 1;
+    text-align: center;
+}
+
+.v2_1189 {
+    width: 208px;
+    height: 98px;
+    background: url("../images/v2_1189.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.30000001192092896;
+    position: absolute;
+    top: 900px;
+    left: 20%;
+    overflow: hidden;
+}
+
+.v2_1190 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+.v2_1191 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+.v2_1192 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+.v2_1193 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+.v2_1194 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+.v2_1195 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 22px;
+    border-radius: 50%;
+}
+
+.v2_1196 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    border-radius: 50%;
+}
+
+.v2_1197 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 22px;
+    border-radius: 50%;
+}
+
+.v2_1198 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 22px;
+    border-radius: 50%;
+}
+
+.v2_1199 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 22px;
+    border-radius: 50%;
+}
+
+.v2_1200 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 44px;
+    border-radius: 50%;
+}
+
+.v2_1201 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 44px;
+    border-radius: 50%;
+}
+
+.v2_1202 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 44px;
+    border-radius: 50%;
+}
+
+.v2_1203 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 44px;
+    border-radius: 50%;
+}
+
+.v2_1204 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 44px;
+    border-radius: 50%;
+}
+
+.v2_1205 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 66px;
+    border-radius: 50%;
+}
+
+.v2_1206 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 66px;
+    border-radius: 50%;
+}
+
+.v2_1207 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 66px;
+    border-radius: 50%;
+}
+
+.v2_1208 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 66px;
+    border-radius: 50%;
+}
+
+.v2_1209 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 66px;
+    border-radius: 50%;
+}
+
+.v2_1210 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 88px;
+    border-radius: 50%;
+}
+
+.v2_1211 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 88px;
+    border-radius: 50%;
+}
+
+.v2_1212 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 88px;
+    border-radius: 50%;
+}
+
+.v2_1213 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 88px;
+    border-radius: 50%;
+}
+
+.v2_1214 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 88px;
+    border-radius: 50%;
+}
+
+.v2_1215 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    border-radius: 50%;
+}
+
+.v2_1216 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 110px;
+    border-radius: 50%;
+}
+
+.v2_1217 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 110px;
+    border-radius: 50%;
+}
+
+.v2_1218 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 110px;
+    border-radius: 50%;
+}
+
+.v2_1219 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 110px;
+    border-radius: 50%;
+}
+
+.v2_1220 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 132px;
+    border-radius: 50%;
+}
+
+.v2_1221 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 132px;
+    border-radius: 50%;
+}
+
+.v2_1222 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 132px;
+    border-radius: 50%;
+}
+
+.v2_1223 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 132px;
+    border-radius: 50%;
+}
+
+.v2_1224 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 132px;
+    border-radius: 50%;
+}
+
+.v2_1225 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 154px;
+    border-radius: 50%;
+}
+
+.v2_1226 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 154px;
+    border-radius: 50%;
+}
+
+.v2_1227 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 154px;
+    border-radius: 50%;
+}
+
+.v2_1228 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 154px;
+    border-radius: 50%;
+}
+
+.v2_1229 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 154px;
+    border-radius: 50%;
+}
+
+.v2_1230 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 176px;
+    border-radius: 50%;
+}
+
+.v2_1231 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 176px;
+    border-radius: 50%;
+}
+
+.v2_1232 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 176px;
+    border-radius: 50%;
+}
+
+.v2_1233 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 176px;
+    border-radius: 50%;
+}
+
+.v2_1234 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 176px;
+    border-radius: 50%;
+}
+
+.v2_1235 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    left: 198px;
+    border-radius: 50%;
+}
+
+.v2_1236 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    left: 198px;
+    border-radius: 50%;
+}
+
+.v2_1237 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 44px;
+    left: 198px;
+    border-radius: 50%;
+}
+
+.v2_1238 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 66px;
+    left: 198px;
+    border-radius: 50%;
+}
+
+.v2_1239 {
+    width: 10px;
+    height: 10px;
+    background: rgba(129, 106, 254, 1);
+    opacity: 1;
+    position: absolute;
+    top: 88px;
+    left: 198px;
+    border-radius: 50%;
+}
