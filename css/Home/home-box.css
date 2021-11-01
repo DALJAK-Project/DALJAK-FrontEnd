@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .home-box {
     position: absolute;
     width: 100%;
@@ -19,7 +20,7 @@
     position: absolute;
     width: 306px;
     height: 356px;
-    left: 130px;
+    left: 180px;
     top: 194.98px;
     background: url(.png);
 }
@@ -183,4 +184,28 @@
     opacity: 1;
     border-radius: 50%;
     margin-left: 20px;
+}
+
+.home-box__review--blue__title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 21px;
+}
+
+.home-box__review--blue__desc {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    padding-top: 20px;
+}
+
+.home-box__review--white--titlebox {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
