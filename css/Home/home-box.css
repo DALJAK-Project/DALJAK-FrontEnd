@@ -20,18 +20,23 @@
     position: absolute;
     width: 306px;
     height: 356px;
-    left: 180px;
     top: 194.98px;
     background: url(.png);
+}
+
+.home-box__review {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .home-box__review--blue {
     align-items: flex-start;
     padding: 0px;
     position: absolute;
+    left: 45%;
     width: 361px;
     height: 185px;
-    left: 40%;
     top: 137px;
 }
 
@@ -41,8 +46,8 @@
     position: absolute;
     width: 363px;
     height: 137px;
-    left: 65%;
     top: 229.98px;
+    left: 70%;
 }
 
 .home-box__review--purple {
@@ -51,7 +56,7 @@
     position: absolute;
     width: 363px;
     height: 137px;
-    left: 40%;
+    left: 45%;
     top: 389.98px;
 }
 
@@ -61,8 +66,8 @@
     position: absolute;
     width: 363px;
     height: 137px;
-    left: 65%;
     top: 479.98px;
+    left: 70%;
 }
 
 .home-box__review--blue--main {
@@ -158,6 +163,14 @@
     left: -20px;
 }
 
+.home-box__logo {
+    left: 10%;
+    width: 45%;
+    margin-left: 220px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .home-box__review--white--main::after {
     border-top: 10px solid transparent;
     border-left: 10px solid white;
@@ -174,7 +187,7 @@
     bottom: 10px;
     display: flex;
     justify-content: center;
-    left: 60%;
+    left: 65%;
 }
 
 .v10 {
@@ -192,6 +205,7 @@
     font-weight: bold;
     font-size: 22px;
     line-height: 21px;
+    margin-bottom: 20px;
 }
 
 .home-box__review--blue__desc {
@@ -208,4 +222,39 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1800px) {
+    .home-box__logo {
+        left: 10%;
+        width: 45%;
+        margin-left: 100px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .home-box__review--blue {
+        align-items: flex-start;
+        padding: 0px;
+        position: absolute;
+        left: 38%;
+        width: 361px;
+        height: 185px;
+        top: 137px;
+    }
+    .home-box__review--purple {
+        align-items: flex-start;
+        padding: 0px;
+        position: absolute;
+        width: 363px;
+        height: 137px;
+        left: 38%;
+        top: 389.98px;
+    }
+    .home-box__dot {
+        position: absolute;
+        bottom: 10 px;
+        display: flex;
+        justify-content: center;
+        left: 63%;
+    }
 }
