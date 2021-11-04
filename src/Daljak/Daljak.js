@@ -17,6 +17,9 @@ export default function Daljak() {
     const imgACTList = [
         "act-a.png","act-a.png","act-a.png","act-b.png","act-c.png","act-d.png","act-e.png"
     ];
+    const moreImg = [
+        "more-a.png", "more-b.png", "more-c.png", "more-d.png", "more-e.png", "more-f.png",
+    ]
     return (
         <div>
             <Nav/>
@@ -24,7 +27,7 @@ export default function Daljak() {
             <Daljak_Center title="IT" images={imgITList} boxName='it'/>
             <Daljak_Center title="자연과학" images={imgNSList} boxName='science'/>
             <Daljak_Center title="예체능" images={imgACTList} boxName='act' moreDisplay={true}/>
-
+            <Daljak_Catagory images={moreImg} />
             </div>
         </div>
     )
@@ -54,6 +57,29 @@ function Daljak_Center({title,images,boxName,moreDisplay}) {
     </div>
     )
 }
+
+function Daljak_Catagory({images}) {
+    const cardlist = images.map((imgUrl) => (
+        <div><img src={require(`../img/${imgUrl}`).default} alt=" " /></div>
+    ));
+    return (
+        <div class="daljak__category">
+            <div class="daljak__category--box ">
+                <div class="daljak__box--category ">
+                    <div class="daljak__box--it--text--category">
+                    <span class="daljak__box--it--title ">More categories</span>
+                    </div>
+                    <div class="daljak__box--cardlist--grid" >
+                        {cardlist}
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+
 function Nav() {
     return(
         <div>
