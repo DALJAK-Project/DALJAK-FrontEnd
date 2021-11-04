@@ -20,6 +20,9 @@ export default function Daljak() {
     const moreImg = [
         "more-a.png", "more-b.png", "more-c.png", "more-d.png", "more-e.png", "more-f.png",
     ]
+    const todayImg = [
+        "small-a.png","small-b.png","small-c.png","small-d.png","small-e.png"
+    ]
     return (
         <div>
             <Nav/>
@@ -28,6 +31,7 @@ export default function Daljak() {
             <Daljak_Center title="자연과학" images={imgNSList} boxName='science'/>
             <Daljak_Center title="예체능" images={imgACTList} boxName='act' moreDisplay={true}/>
             <Daljak_Catagory images={moreImg} />
+            <DaljakToday images={todayImg}/>
             </div>
         </div>
     )
@@ -78,8 +82,49 @@ function Daljak_Catagory({images}) {
     )
 }
 
+function DaljakToday({images}) {
+    const component  = images.map((imgUrl) => (
+        <DaljakTodayComponent imgUrl={imgUrl} title="Et omnis aut id"  date="2021/3/30" desc="Et omnis aut id. Aut eaque est quaerat. Doloribus omnis fugit et sit ducimus expedita."  />
+    ));
+    return(
+        <div class=" daljak__category ">
+            <div class=" daljak__category--box--today ">
+                <div class=" daljak__box--it ">
+                    <div>
+                        <span class=" daljak__box--it--title ">오늘의 <span style={{"background-color":"rgba(129, 106, 254, 1)"}}>인기작</span></span>
+                    </div>
+                       {component}
 
+                    <div class=" daljak__deco--bottom ">
+                        <img src=" ../img/deco-b.png " alt=" " />
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 
+    )
+}
+function DaljakTodayComponent({imgUrl, title, date, desc}) {
+    return (
+        <div class=" daljak__box--cardlist--card--today ">
+            <div>
+                <img src={require(`../img/${imgUrl}`).default} alt=" " />
+            </div>
+
+            <div class=" daljak__box--cardlist--card--today--textbox ">
+                <div class=" daljak__box--cardlist--card--today--text ">
+                    <div class=" daljak__box--cardlist--card--today--title ">{title}
+                    </div>
+                    <div class=" daljak__box--cardlist--card--today--date ">{date}</div>
+                </div>
+     
+                <span class=" daljak__box--cardlist--card--today--desc ">{desc}
+                </span>
+            </div>
+        </div>
+    )
+}
 function Nav() {
     return(
         <div>
