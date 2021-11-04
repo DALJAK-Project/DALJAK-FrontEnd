@@ -14,6 +14,7 @@ const callApi = async(method, path, data, jwt, params = {}) => {
     }
 };
 
+
 export default {
     createAccount: (form) => callApi("post", "/users/", form),
     login: (form) => callApi("post", "/users/login/", form),

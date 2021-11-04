@@ -1,8 +1,14 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React,{Component} from "react";
+import HomePresenter from "./Routes/Home/HomePresenter";
 
-function App() {
-  return <div className="App"></div>;
+class App extends Component{
+  render(){
+    return(
+      
+        <HomePresenter></HomePresenter>
+      
+    );
+  }
 }
 
 export default App;
