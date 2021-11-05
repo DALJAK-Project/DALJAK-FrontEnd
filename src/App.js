@@ -4,9 +4,7 @@ import HomePresenter from "./Routes/Home/HomePresenter";
 class App extends Component{
   render(){
     return(
-      
         <HomePresenter></HomePresenter>
-      
     );
   }
 }

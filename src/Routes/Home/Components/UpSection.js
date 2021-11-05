@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const Language=styled.div`
@@ -50,17 +49,6 @@ const R21 = styled.div`
     align-items:center;
     background: #585858;
 `;
-
-const Logo = styled.div`
-    background-color:white;
-    width: 306px;
-    height: 356px;
-    margin-left: 130px;
-    margin-top:154.98px;
-    blend:lighten;
-
-`;
-
 const Menu = styled.ul`
     position:absolute;
     display: flex;
@@ -101,6 +89,7 @@ const Log=styled.div`
     position: absolute;
     display:flex;
     align-items:center;
+    justify-content:space-between;
     width: 150px;
     height: 35px;
     left: 1060px;
@@ -122,42 +111,35 @@ const Login=styled.span`
 `;
 
 const Group=styled.div`
-    position: absolute;
     width: 74px;
     height: 32px;
     left: 1060px;
     top: 36px;
     radius:4px;
+    
 `;
 
 const Signup=styled.span`
-    position: absolute;
-    width: 52px;
-    height: 19px;
-    left: calc(50% - 52px/2 + 377px);
-    top: 42px;
-
+    width: 74px;
+    position:relative;
     font-family: Noto Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 19px;
-    /* identical to box height */
-
-
-    /* Primary/Purple */
-
+    line-height: 32px;
+    display:table-cell;
+    text-align:center;
+    z-index=1;
     color: #816AFE;
 `;
 const R=styled.div`
-    position: absolute;
+    position:absolute;
     width: 74px;
     height: 32px;
-    left: calc(50% - 74px/2 + 377px);
-    top: 36px;
 
     background: #FFFFFF;
     border-radius: 4px;
+    z-index=0;
 `;
 
 const UpSection = () =>(
@@ -170,11 +152,11 @@ const UpSection = () =>(
                 <MenuDetail>커뮤니티</MenuDetail>
             </Menu>
             <Log>
-                <Login>Log in</Login>
                 <Group>
-                    <Signup>Sign up</Signup>
                     <R />
+                    <Signup>Sign up</Signup>                    
                 </Group>
+                <Login>Log in</Login>
             </Log>
             <Language>
                 <Ico_chevron>
