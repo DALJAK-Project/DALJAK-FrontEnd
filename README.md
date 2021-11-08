@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# DAJLAK-BackEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+REST API를 이용한 Django 웹 서버 개발
 
-## Available Scripts
+# 규칙
 
-In the project directory, you can run:
+---
 
-### `npm start`
+- 브랜치는 제품 백로그 단위로 생성한다
+- 백로그는 pull request를 통해 생성한다.
+- commit 할때 Commit Message Rule 을 지켜준다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Commit Message Rule
 
-### `npm test`
+```
+- feat : 새로운 기능 추가
+- update : 버전 등 업데이트
+- fix : 수정
+- bug : 버그 수정
+- docs : 문서
+- style : 코드 스타일 혹은 포맷 등에 관한 커밋
+- refactor : 코드 리펙토링
+- test : 테스트 코드 수정
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 첫글자는 대문자
+2. 커밋메시지 예시
+   ex) [Feat] 게시물 기능
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Pull Request Rule
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- 브랜치의 이름은 feature/ 기능 으로 설정한다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  ex) feature/login
 
-### `npm run eject`
+- pull request의 경우에는 스프린트 백로그를 기준으로 생성하고 제목은 커밋 제목
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 브랜치 전략
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+- master : 라이브 서버에 제품으로 출시되는 브랜치.
+- develop : 다음 출시 버전을 대비하여 개발하는 브랜치.
+- feature : 기능 개발 브랜치. develop 브랜치에 들어간다.
+- release : 다음 버전 출시를 준비하는 브랜치. develop 브랜치를 release 브랜치로 옮긴 후 QA, 테스트를 진행하고 master 브랜치로 합친다.
+- hotfix : master 브랜치에서 발생한 버그를 수정하는 브랜치.
+```
