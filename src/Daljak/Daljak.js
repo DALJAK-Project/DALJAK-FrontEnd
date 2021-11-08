@@ -6,6 +6,7 @@ import '../css/Home/header-bar.css';
 import '../css/Daljak/daljak_home.css';
 // import '../css/Home/font.css';
 
+import { MdPlayCircle } from 'react-icons/md';
 
 export default function Daljak() {     
     const imgITList = [
@@ -26,6 +27,7 @@ export default function Daljak() {
     return (
         <div>
             <Nav/>
+            
             <div className="daljak__box">
             <Daljak_Center  key="it" title="IT" images={imgITList} boxName='it'/>
             <Daljak_Center  key="science" title="자연과학" images={imgNSList} boxName='science' />
@@ -55,7 +57,8 @@ function Daljak_Center({title,images,boxName,moreDisplay}) {
             <div className="daljak__box--cardlist">
                 {/* 카드 */}
                 {cards}
-                <span style={{color: '#816afe'}}><i className="fas fa-play-circle fa-3x" aria-hidden="true"></i></span>
+                
+                <span style={{color: '#816afe'}}><MdPlayCircle size="40"/></span>
                 {/* <span style={{color: '#816afe'}}><i className="fas fa-play-circle fa-3x"></i>
                 </span> */}
             </div>
