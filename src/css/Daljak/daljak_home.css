@@ -11,12 +11,18 @@
     position: absolute;
     top: 204.98px;
     width: 100%;
+    left: 0;
+    right: 0;
 }
-
+.daljak__center {
+    max-width: 100vw;
+    overflow: hidden;
+}
 .daljak__box--it {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .daljak__box--cardlist {
@@ -30,11 +36,14 @@
 
 .daljak__box--cardlist--card {
     margin-top: 20px;
-    width: 280px;
+    width: 250px;
     height: 180px;
     border-radius: 16px;
+  
 }
-
+.daljak__box--cardlist--card img {
+    width: 250px;
+}
 .fa-play-circle {
     position: relative;
     right: 17px;
@@ -111,11 +120,11 @@
 }
 
 .daljak__category--box--today {
-    width: 100%;
     margin-top: 80px;
     display: flex;
     position: relative;
     left: 17%;
+    width: fit-content;
 }
 
 .daljak__box--cardlist--card--today {
@@ -179,11 +188,12 @@
         padding-bottom: 20 px;
     }
     .daljak__category--box--today {
-        width: 100%;
         margin-top: 80 px;
         display: flex;
         position: relative;
         left: 7%;
+    width: fit-content;
+
     }
     .daljak__deco--bottom {
         display: inline-block;

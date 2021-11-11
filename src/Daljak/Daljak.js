@@ -5,9 +5,10 @@ import '../css/Home/header-bar.css';
 // import '../css/Home/header-cardbox.css';
 import '../css/Daljak/daljak_home.css';
 // import '../css/Home/font.css';
+import '../css/Daljak/all.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight,faChevronCircleLeft,faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 export default function Daljak() {     
     const imgITList = [
         "Rectangle-a.png","Rectangle-b.png","Rectangle-c.png","Rectangle-d.png","Rectangle-e.png"
@@ -55,9 +56,11 @@ function Daljak_Center({title,images,boxName,moreDisplay}) {
             </div>
 
             <div className="daljak__box--cardlist">
+                <FontAwesomeIcon icon={faChevronCircleLeft} style={{color: '#816afe'}} />
                 {/* 카드 */}
                 {cards}
-                <FontAwesomeIcon icon={faChevronRight} style={{color: '#816afe'}} />
+                <FontAwesomeIcon icon={faChevronCircleRight} style={{color: '#816afe'}} />
+
                 {/* <span style={{color: '#816afe'}}><MdPlayCircle size="40"/></span> */}
                 {/* <span style={{color: '#816afe'}}><i className="fas fa-play-circle fa-3x"></i>
                 </span> */}
@@ -100,9 +103,9 @@ function DaljakToday({images}) {
                     </div>
                        {component}
 
-                    <div className=" daljak__deco--bottom ">
+                    {/* <div className=" daljak__deco--bottom ">
                         <img src=" ../img/deco-b.png " alt=" " />
-                    </div>
+                    </div> */}
                 </div>
                 
             </div>
