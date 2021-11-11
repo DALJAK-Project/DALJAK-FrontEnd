@@ -6,8 +6,8 @@ import '../css/Home/header-bar.css';
 import '../css/Daljak/daljak_home.css';
 // import '../css/Home/font.css';
 
-import { MdPlayCircle } from 'react-icons/md';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 export default function Daljak() {     
     const imgITList = [
         "Rectangle-a.png","Rectangle-b.png","Rectangle-c.png","Rectangle-d.png","Rectangle-e.png"
@@ -57,8 +57,8 @@ function Daljak_Center({title,images,boxName,moreDisplay}) {
             <div className="daljak__box--cardlist">
                 {/* 카드 */}
                 {cards}
-                
-                <span style={{color: '#816afe'}}><MdPlayCircle size="40"/></span>
+                <FontAwesomeIcon icon={faChevronRight} style={{color: '#816afe'}} />
+                {/* <span style={{color: '#816afe'}}><MdPlayCircle size="40"/></span> */}
                 {/* <span style={{color: '#816afe'}}><i className="fas fa-play-circle fa-3x"></i>
                 </span> */}
             </div>
