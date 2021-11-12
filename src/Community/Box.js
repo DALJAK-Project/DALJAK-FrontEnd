@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import "../css/community/community__topbox.css";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import Category from "../Community/Category";
+import { Link } from "react-router-dom";
+import Create from "./Create";
 
 class Box extends Component {
   render() {
@@ -37,7 +39,11 @@ class Box extends Component {
           </div>
         </div>
         <div class="community__box--button">
-          <button>Write a post now</button>
+          {/* 일단 react router dom 이 실행이 안돼 */}
+          {/* 라우터??? 라우터가 왜 필요하지 */}
+          <a href="./Create">
+            <button> {/* 이거 클릭하면 create로 이동하게끔하자 */}</button>
+          </a>
         </div>
         <Category
           category={categoryList}

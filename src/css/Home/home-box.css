@@ -224,6 +224,18 @@
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1500px) {
+    .hljs {
+        display: block;
+        overflow-x: auto;
+        padding: 0.5 em;
+        line-height: 1.3em;
+        color: #abb2bf;
+        background: #282c34;
+        border-radius: 5px;
+    }
+}
+
 @media screen and (max-width: 1800px) {
     .home-box__logo {
         left: 10%;
