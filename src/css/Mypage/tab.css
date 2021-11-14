@@ -5,7 +5,6 @@ body {
 .tab-wrap {
     margin-top: 200px;
     display: flex;
-    justify-content: space-around;
     width: 80%;
     margin-left: 20%;
 }
@@ -20,48 +19,6 @@ body {
     font-weight: 600;
 }
 
-.tab-content {
-    width: 80%;
-    margin-left: 10%;
-}
-
-.Account-overview__title {
-    font-size: 30px;
-    font-weight: 900;
-    margin-bottom: 60px;
-}
-
-.Account-overview__cnt {
-    width: 65%;
-    padding: 10px 0px;
-    border: 2px solid rgb(110, 168, 255);
-    border-radius: 5px;
-    display: flex;
-    margin-top: 20px;
-}
-
-.Account-overview__cnt-title {
-    color: rgb(110, 168, 255);
-    width: 20%;
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-.Account-overview__cnt-input {
-    width: 80%;
-}
-
-.Account-overview__Edit-Btn {
-    padding: 10px 0px;
-    border: 2px solid rgb(214, 21, 21);
-    color: rgb(214, 21, 21);
-    border-radius: 5px;
-    width: 12%;
-    text-align: center;
-    margin-top: 40px;
-    font-weight: bold;
-}
-
 @media screen and (max-width: 1800px) {
     .tab-wrap {
         margin-top: 150px;
@@ -70,10 +27,12 @@ body {
         width: 80%;
         margin-left: 20%;
     }
-    .profile {
+}
+@media screen and (max-width:800px){
+    .tab-wrap{
         margin-top: 200px;
         display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        width: 100%;
+        margin-left: 10%;
     }
 }

@@ -1,24 +1,21 @@
 import React from "react";
-import UpSection from "./Parts/UpSection";
+import {Header} from "../Home/Components/Header";
+import {Box} from "../Home/Components/Box";
 import styled from "styled-components";
-import Banner from "./Parts/Banner";
-
+import { Cardbox } from "./Components/Cardbox";
+import { Accessories } from "./Components/Accessories";
 const Container = styled.div`
     position: relative;
     width: 1440px;
     height: 2496px;
 `;
-const Elements = styled.div`
-    position: absolute;
-`;
-const HomePresenter = ()=>
-(
-    <Container>
-            <Banner />
-    </Container>
-    
-    
-);
-
-
-export default HomePresenter;
+export function HomePresenter(){
+    return(
+        <Container>
+            <Header />
+            <Box/>
+            <Cardbox/>
+            <Accessories />
+        </Container>
+    );
+}

@@ -1,0 +1,44 @@
+.tab-content {
+    width: 50%;
+    margin-left:10%;
+}
+.edit__title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+.edit__daljak {
+    margin-bottom:50px;
+    display:flex;
+    justify-content: space-between;
+}
+.daljak__post{
+    color: #21243D;
+    height:15%;
+    width:70%;
+}
+.post__title{
+    color: #21243D;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size:24px;
+}
+.post__more{
+    color: #21243D;
+    font-size:16px;
+}
+.group{
+    display:flex;
+    justify-content: space-between;
+}
+.edit__line{
+    size:1px;
+    color:#E0E0E0;
+    border-bottom: 2px;
+}
+@media screen and (max-width:1400px){
+    .tab-content {
+        width: 50%;
+        margin-left:00%;
+    }
+}

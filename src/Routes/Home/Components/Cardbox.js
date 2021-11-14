@@ -8,18 +8,18 @@ import Img4 from "../../../img/photo.png"
 import Img5 from "../../../img/arc.png"
 import Img6 from "../../../img/news.png"
 import Img7 from "../../../img/podcast.png"
-const Styled_span = styled.span`
+const StyledSpan = styled.span`
     background-color:rgba(129, 106, 254, 1);
 `;
-const Top_img=styled.img`
+const TopImg=styled.img`
     width: 340.72px;
     height: 168.53px;
 `;
-const Outter_img=styled.img`
+const OutterImg=styled.img`
     width: 708px;
     height: 169px;
 `;
-const Inner_img=styled.img`
+const InnerImg=styled.img`
     width: 341px;
     height: 168.53px;
 `;
@@ -28,7 +28,7 @@ export function Cardbox(){
         <div class="home-cardbox">
             <div class="v2_1348">
                 <div class="home-cardbox__text">
-                    <span class="v2_1350">우리들의 <Styled_span>작품</Styled_span>을 공유하는 공간</span>
+                    <span class="v2_1350">우리들의 <StyledSpan>작품</StyledSpan>을 공유하는 공간</span>
                 </div>
             </div>
             <div class="home-cardbox__text--main">
@@ -50,16 +50,14 @@ export function Cardbox(){
                 <span class="v44_559">#comedy</span>
             </div>
             <div class="home-cardbox__card">
-                <span class="div"><Top_img src={Img1}/></span>
-                <span class="div"><Top_img src={Img2}/></span>
-                <span class="div"><Top_img src={Img3}/></span>
-                <span class="div"><Outter_img src={Img4}/></span>
-                <span class="div"><Inner_img src={Img5}/></span>
-                <span class="div"><Inner_img src={Img6}/></span>
-                <span class="div"><Outter_img src={Img7}/></span>
+                <span class="div"><TopImg src={Img1}/></span>
+                <span class="div"><TopImg src={Img2}/></span>
+                <span class="div"><TopImg src={Img3}/></span>
+                <span class="div"><OutterImg src={Img4}/></span>
+                <span class="div"><InnerImg src={Img5}/></span>
+                <span class="div"><InnerImg src={Img6}/></span>
+                <span class="div"><OutterImg src={Img7}/></span>
             </div>
         </div>
     );
 };
-
-export default Cardbox;
