@@ -4,64 +4,163 @@ import Nav from "../components/Nav";
 // NOTE: Use the editor from source (not a build)!
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+import Dropdown from "../Community/Dropdown";
 
+// 여기서 일단 fontawsome import 시키고
 // 자 여기서 부터 create 값을 입력받을시 e객체로 target값들 콘솔에다가 입력시켜보자
 
 // 입력받을시 e.target.value값 받아와보자
+
+const DropdownMenu = styled.div`
+  display: ${(props) => (props.sign === "+" ? "none" : "block")};
+`;
+
+// 버튼에다가 onchange만들어줘서 이쪽 메뉴에다가 클릭이벤트 mode = 로직을 클릭한 로직으로
+// 나 뭐하고 있었지...? 아 그래서 mode를 바꾸면 그 입력한 글자 그대로 가기로 한거지?
 
 class Create extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      category_num: 1,
       contents: { title: "", contents: "" },
+      dropdown: "+",
+      // 여기서 다운기호 쓰려면 어떻게 해야하지??
+      mode: "category",
+      menu: [
+        { id: 1, title: "it" },
+        { id: 2, title: "인문" },
+        { id: 3, title: "자연" },
+        { id: 4, title: "예체능" },
+      ],
     };
   }
-
+  // 로직: 한개를 클릭했을때 mode값이 그대로 바뀜
+  DropdownClickHandler(event) {
+    // 클릭했을때
+    this.setState((state) => ({
+      dropdown: state.dropdown === "+" ? "-" : "+",
+    }));
+  }
+  // i가 3보다 작을경우 배열을 반복해서 id값과 맞춤
   render() {
-    const getValue = (e) => {
-      const { name, value } = e.target;
-      console.log(name, value);
-    };
+    // var i = 0;
+    // var title = null;
+    // while(i<4) {
+    //   var data = this.state.menu[i];
+    //   if()
+    //   // data안에 배열과 아이디값이 똑같을경우
+    // }
     return (
       <div>
         <Nav></Nav>
         <div class="community-create">
           <h1 class="community-create__text">커뮤니티 글쓰기</h1>
-          <form class="community-create__form" action="" method="post">
-            <p>
-              <input
-                //   onSubmit={function (e) {
-                //     e.prventDefault();
-                //     alert("섭밑!!");
-                //     this.props;
-                //   }}
-                class="community-create__input"
-                type="text"
-                name="title"
-                id=""
+          <div class="community-create__box">
+            <form class="community-create__form" action="" method="post">
+              <p>
+                <input
+                  //   onSubmit={function (e) {
+                  //     e.prventDefault();
+                  //     alert("섭밑!!");
+                  //     this.props;
+                  //   }}
+                  class="community-create__input"
+                  type="text"
+                  name="title"
+                  id=""
+                  placeholder="제목"
+                />
+              </p>
+              <p>
+                <input
+                  //   onSubmit={function (e) {
+                  //     e.prventDefault();
+                  //     alert("섭밑!!");
+                  //     this.props;
+                  //   }}
+                  class="community-create__input"
+                  type="text"
+                  name="title"
+                  id=""
+                  placeholder="태그"
+                />
+              </p>
+              {/* 여기서 로직: 만약 바뀐 모드가 state모드값과 같다면 ttile값 출력 */}
+              <p>
+                <input
+                  type="file"
+                  id="chooseFile"
+                  name="chooseFile"
+                  accept="image/*"
+                  onchange="loadFile(this)"
+                />{" "}
+              </p>
+              {/* 그럼여기서 이거를 on submit했을때 target값을 받아와야해 */}
+              {/* 머리가 하얗다..  */}
+
+              <p class="community-create__p">
+                <div>
+                  <button
+                    //   onSubmit={function (e) {
+                    //     e.prventDefault();
+                    //     alert("섭밑!!");
+                    //     this.props;
+                    //   }}
+                    type="button"
+                    class="community-create__input"
+                    placeholder="학과명"
+                    onClick={this.DropdownClickHandler.bind(this)}
+                  >
+                    {this.state.mode}
+                  </button>
+
+                  {this.state.dropdown}
+                </div>
+                {/* 메뉴박스들 */}
+                {/* 무슨태그로..? */}
+                <DropdownMenu sign={this.state.dropdown}>
+                  <Dropdown
+                    data={this.state.menu}
+                    onChangePage={function (e) {
+                      e.preventDefault();
+                      this.setState(
+                        {
+                          category_num: this.state.category_num + 1,
+                          // 클릭했을경우 모드가 그에맞는 모드값으로 변경되게끔 실행
+                        }.bind(this)
+                      );
+                    }}
+                  ></Dropdown>
+                </DropdownMenu>
+              </p>
+              {/* 클릭했을때 카테고리 이름 변경되게끔 */}
+              {/* h 여기다 드롭다운 만들것이다 */}
+              {/* onclick -> display block 이였던게 보이게끔 */}
+              {/* 로직은 아코디언이랑 비슷 ] */}
+              {/* 아코디언 로직 -> + -로 변하면서 밑에있던것들이 보인다 */}
+              <CKEditor
+                editor={ClassicEditor}
+                onReady={(editor) => {
+                  // You can store the "editor" and use when it is needed.
+                  console.log("Editor is ready to use!", editor);
+                }}
+                onChange={(event, editor) => {
+                  const data = editor.getData();
+                  console.log({ event, editor, data });
+                }}
+                onBlur={(event, editor) => {
+                  console.log("Blur.", editor);
+                }}
+                onFocus={(event, editor) => {
+                  console.log("Focus.", editor);
+                }}
               />
-            </p>
-            {/* 그럼여기서 이거를 on submit했을때 target값을 받아와야해 */}
-            {/* 머리가 하얗다..  */}
-            <CKEditor
-              editor={ClassicEditor}
-              data="<p>Hello from CKEditor 5!</p>"
-              onReady={(editor) => {
-                // You can store the "editor" and use when it is needed.
-                console.log("Editor is ready to use!", editor);
-              }}
-              onChange={(event, editor) => {
-                const data = editor.getData();
-                console.log({ event, editor, data });
-              }}
-              onBlur={(event, editor) => {
-                console.log("Blur.", editor);
-              }}
-              onFocus={(event, editor) => {
-                console.log("Focus.", editor);
-              }}
-            />
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     );

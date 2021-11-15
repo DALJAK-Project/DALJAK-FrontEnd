@@ -17,35 +17,10 @@ class Category extends Component {
     };
   }
 
-  imgChangeLeft = () => {
-    if (this.state.img > 2) {
-      this.setState({
-        img: 1,
-      });
-    } else {
-      this.setState({
-        img: this.state.img + 1,
-      });
-    }
-  };
-
-  buttonDisplayOn = () => {
-    this.setState({
-      display: "block",
-    });
-  };
-  buttonDisplayOff = () => {
-    this.setState({
-      display: "none",
-    });
-  };
   //   componentDidMount() {
   //     setInterval(this.imgChangeLeft, 5000);
   //   }
-  get content() {
-    if (this.state.img === "1") {
-    }
-  }
+
   render() {
     return (
       <div class="community__box--category">
