@@ -35,8 +35,9 @@
 
 .daljak__box--cardlist--card {
     text-align: center;
-    margin-top: 20px;
-    height: 180px;
+    /* margin-top: 20px; */
+    /* height: 180px; */
+    height: fit-content;
     border-radius: 16px; 
 }
 .daljak__box--cardlist--card img {
@@ -58,6 +59,7 @@
     /* width: 34%;
     position: relative;
     align-items: flex-end; */
+    margin: 20px 0;
 }
 /* 추가 */
 .daljak__box--title {
