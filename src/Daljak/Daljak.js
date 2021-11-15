@@ -7,6 +7,12 @@ import '../css/Daljak/daljak_home.css';
 // import '../css/Home/font.css';
 import '../css/Daljak/all.css';
 
+// slider swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight,faChevronCircleLeft,faChevronCircleRight } from "@fortawesome/free-solid-svg-icons";
 export default function Daljak() {     
@@ -30,27 +36,27 @@ export default function Daljak() {
             <Nav/>
             
             <div className="daljak__box">
-            <Daljak_Center  key="it" title="IT" images={imgITList} boxName='it'/>
-            <Daljak_Center  key="science" title="자연과학" images={imgNSList} boxName='science' />
-            <Daljak_Center  key="act" title="예체능" images={imgACTList} boxName='act' moreDisplay={true}/>
+            <Daljak_Center1   key="it" title="IT" images={imgITList} boxName='it'/>
+            <Daljak_Center1  key="science" title="자연과학" images={imgNSList} boxName='science' />
+            <Daljak_Center2  key="act" title="예체능" images={imgACTList} boxName='act'/>
             <Daljak_Catagory  key="categoty" images={moreImg} />
             <DaljakToday  key="today" images={todayImg}/>
             </div>
         </div>
     )
 }
-function Daljak_Center({title,images,boxName,moreDisplay}) {
+function Daljak_Center1({title,images,boxName}) {
     const cards = images.map((imgUrl,index) => (
         <div className="daljak__box--cardlist--card" key={`centerCardImg${index}`}>
         <img src={require(`../img/${imgUrl}`).default} alt="" />
     </div>
     ));
     
-    console.log(cards);
+    // console.log(cards);
     return(
         <div className="daljak__center">
         <div className={`daljak__box--${boxName}`}>
-            <div className={moreDisplay?"daljak__box--it--text":''}>
+            <div>
                 <span className="daljak__box--it--title">{title}</span>
                 <span className="daljak__box--it--desc">전체보기</span>
             </div>
@@ -69,7 +75,35 @@ function Daljak_Center({title,images,boxName,moreDisplay}) {
     </div>
     )
 }
+function Daljak_Center2({title,images,boxName}) {
+    const cards = images.map((imgUrl,index) => (
+        <div className="daljak__box--cardlist--card" key={`centerCardImg${index}`}>
+        <img src={require(`../img/${imgUrl}`).default} alt="" />
+    </div>
+    ));
+    return(
+        <div className="daljak__center">
+        <div className={`daljak__box--${boxName}`}>
+            <div>
+                <span className="daljak__box--it--title">{title}</span>
+                <span className="daljak__box--it--desc">전체보기</span>
+            </div>
 
+            <div className="daljak__box--cardlist">
+                <FontAwesomeIcon icon={faChevronCircleLeft} style={{color: '#816afe'}} />
+                {/* 카드 */}
+                {cards}
+                <FontAwesomeIcon icon={faChevronCircleRight} style={{color: '#816afe'}} />
+
+                {/* <span style={{color: '#816afe'}}><MdPlayCircle size="40"/></span> */}
+                {/* <span style={{color: '#816afe'}}><i className="fas fa-play-circle fa-3x"></i>
+                </span> */}
+            </div>
+        </div>
+    </div>
+
+    )
+}
 function Daljak_Catagory({images}) {
     const cardlist = images.map((imgUrl,index) => (
         <div key={`categoryCardImg${index}`}><img src={require(`../img/${imgUrl}`).default} alt=" " /></div>
