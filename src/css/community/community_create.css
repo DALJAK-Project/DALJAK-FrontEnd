@@ -59,6 +59,10 @@
     border-radius: 2px;
 }
 
+.community-create-menu--none {
+    display: none;
+}
+
 .community-create-menu:hover {
     background-color: gray;
 }

@@ -36,8 +36,12 @@ class Create extends Component {
         { id: 3, title: "자연" },
         { id: 4, title: "예체능" },
       ],
+      isToggleOn: true,
     };
   }
+
+  // 그럼 꼭 다 만들어가야하나..?
+
   // 로직: 한개를 클릭했을때 mode값이 그대로 바뀜
   DropdownClickHandler(event) {
     // 클릭했을때
@@ -54,6 +58,17 @@ class Create extends Component {
     //   if()
     //   // data안에 배열과 아이디값이 똑같을경우
     // }
+    var _title = null;
+    var i = 0;
+    while (i < this.state.menu.length) {
+      var data = this.state.menu[i];
+      if (data.id === this.state.category_num) {
+        _title = data.title;
+      }
+      i = i + 1;
+    }
+    // if(this.state.isToggleOn === F
+    //   )
     return (
       <div>
         <Nav></Nav>
@@ -115,9 +130,10 @@ class Create extends Component {
                     placeholder="학과명"
                     onClick={this.DropdownClickHandler.bind(this)}
                   >
-                    {this.state.mode}
+                    {_title}
+                    {/* 이거의 타이틀만 바꾸면되는데 */}
                   </button>
-
+                  {/* 클릭하면 안보이게 => state값이 1보다 크면 display none으로  */}
                   {this.state.dropdown}
                 </div>
                 {/* 메뉴박스들 */}
@@ -125,15 +141,13 @@ class Create extends Component {
                 <DropdownMenu sign={this.state.dropdown}>
                   <Dropdown
                     data={this.state.menu}
-                    onChangePage={function (e) {
-                      e.preventDefault();
-                      this.setState(
-                        {
-                          category_num: this.state.category_num + 1,
-                          // 클릭했을경우 모드가 그에맞는 모드값으로 변경되게끔 실행
-                        }.bind(this)
-                      );
-                    }}
+                    onChangeDropdwon={function (id) {
+                      this.setState({
+                        category_num: Number(id),
+                        // isToggleOn: False,
+                      });
+                      // 클릭하면 display none으로
+                    }.bind(this)}
                   ></Dropdown>
                 </DropdownMenu>
               </p>
