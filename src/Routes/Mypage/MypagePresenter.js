@@ -3,7 +3,7 @@ import {Header} from "./Components/Header";
 import {Profile} from "./Components/Profile";
 import {Tab} from "./Components/Tab";
 
-export function Mypage_Home_Presenter(){
+function Mypage_Home_Presenter(){
     return( 
         <>
             <Header />
@@ -12,3 +12,4 @@ export function Mypage_Home_Presenter(){
         </>
     );
 }
+export default Mypage_Home_Presenter;

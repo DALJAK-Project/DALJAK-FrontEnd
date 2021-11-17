@@ -223,7 +223,7 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (min-width: 800px) and (max-width: 1400px) {
     .home-box__logo {
         left: 10%;
         width: 45%;
@@ -235,19 +235,40 @@
         align-items: flex-start;
         padding: 0px;
         position: absolute;
-        left: 38%;
-        width: 361px;
-        height: 185px;
+        left: 45%;
+        width: 300px;
+        height: 150px;
         top: 137px;
     }
+    
+    .home-box__review--orange {
+        align-items: flex-start;
+        padding: 0px;
+        position: absolute;
+        width: 300px;
+        height: 105px;
+        top: 229.98px;
+        left: 70%;
+    }
+    
     .home-box__review--purple {
         align-items: flex-start;
         padding: 0px;
         position: absolute;
-        width: 363px;
-        height: 137px;
-        left: 38%;
+        width: 300px;
+        height: 105px;
+        left: 45%;
         top: 389.98px;
+    }
+    
+    .home-box__review--white {
+        align-items: flex-start;
+        padding: 0px;
+        position: absolute;
+        width: 300px;
+        height: 105px;
+        top: 479.98px;
+        left: 70%;
     }
     .home-box__dot {
         position: absolute;

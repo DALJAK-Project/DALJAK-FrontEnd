@@ -18,7 +18,13 @@ body {
     padding: 20px 0px;
     font-weight: 600;
 }
-
+button{
+    border:none;
+    background:transparent;
+    text-align:left;
+    font-weight: 600;
+    padding:20px 0px;
+}
 @media screen and (max-width: 1800px) {
     .tab-wrap {
         margin-top: 150px;

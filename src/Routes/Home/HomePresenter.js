@@ -4,18 +4,16 @@ import {Box} from "../Home/Components/Box";
 import styled from "styled-components";
 import { Cardbox } from "./Components/Cardbox";
 import { Accessories } from "./Components/Accessories";
-const Container = styled.div`
-    position: relative;
-    width: 1440px;
-    height: 2496px;
-`;
-export function HomePresenter(){
+
+function HomePresenter(){
     return(
-        <Container>
+        <div>
             <Header />
             <Box/>
             <Cardbox/>
             <Accessories />
-        </Container>
+        </div>
     );
 }
+
+export default HomePresenter;
