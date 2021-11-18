@@ -4,20 +4,28 @@ import {
   Route,
   Routes,
   BrowserRouter,
-  Router,
+  Router,Switch
 } from "react-router-dom";
 import Community from "./Community/Community";
 import Create from "./Community/Create";
+import Daljak  from "./Daljak/Daljak";
 
 // App.js에 있던 Aladin, LionKing, SpiderMan을
 // Components/Routes.js 로 이동
 export default () => (
-  <Router>
+  // <Router>
+  //   <Routes>
+  //     <Route path="/about" component={Community} exact={true} />
+  //     <Route path="/create" component={Create} />
+  //   </Routes>
+  // </Router>
+  <BrowserRouter>
     <Routes>
-      <Route path="/about" component={Community} exact={true} />
-      <Route path="/create" component={Create} />
+      <Route path="/daljak" element={<Daljak/>} />
+       <Route path="/create" element={<Create/>} />
+       <Route path="/about" element={<Community/>} exact={true} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 // 라우터가 안되는 이유가 뭘까?????
