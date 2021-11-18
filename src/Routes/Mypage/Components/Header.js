@@ -1,7 +1,7 @@
 import React from "react";
 import '../../../css/Mypage/header-bar.css';
 import Logo from "../../../img/logo.png";
-import { Link,Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 /*<Router>
                 <li><Link to = "/">Home</Link></li>
                 <li><Link to = "/other">다른달작</Link></li>
