@@ -6,31 +6,43 @@ import {Bookmark} from "../Components/Bookmark";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faEdit,faBookmark,faLock} from "@fortawesome/free-solid-svg-icons";
 import { Profile } from "./Profile";
-
+import {EditProfile} from "../Components/EditProfile";
 class Tab extends React.Component{
-    state={
-        mode:""
-    };
+    constructor(props){
+        super(props);
+        this.state={
+            mode:"Account"
+        }
+    }
     modeChange=(e)=>{
         this.setState({
             mode:this.props.mode
         });
     }
+    
     render(){
+        let page;
+        if(this.state.mode=="Account"){
+            page=<Account />
+        }else if(this.state.mode=="Edit"){
+            page=<Edit />
+        }else if(this.state.mode=="Bookmark"){
+            page=<Bookmark />
+        }else if(this.state.mode=="EditProfile"){
+            page=<EditProfile />
+        }else if(this.state.mode=="ChangePassword"){
+            page="<Pwd />"
+        }
         return(
             <div class="tab-wrap">
                 <ul class="tab">
                     <li class="tab__list">
-                        <button type="button" onClick={()=>{
+                        <button onClick={()=>{
                             this.setState({
-                                mode:"Profile"
+                                mode:"Account"
                             })
                         }}>
-                            <FontAwesomeIcon icon={faHome} onClick={()=>{
-                            this.setState({
-                                mode:"Profile"
-                            })
-                        }}/> Account Overview
+                            <FontAwesomeIcon icon={faHome} /> Account Overview
                         </button>
                     </li>
                     <li class="tab__list">
@@ -63,14 +75,14 @@ class Tab extends React.Component{
                     <li class="tab__list">
                         <button type="button"onClick={()=>{
                             this.setState({
-                                mode:"Post"
+                                mode:"ChangePassword"
                             })
                         }}>
                             <FontAwesomeIcon icon={faLock} /> Change Password
                         </button>
                     </li>
                 </ul>
-                <Bookmark />
+                {page};
             </div>
         );
     }

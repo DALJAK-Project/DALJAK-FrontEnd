@@ -22,7 +22,6 @@ export function Account(){
                     <div class="Account-overview__cnt-title">Last name</div>
                     <div class="Account-overview__cnt-input">홍</div>
                 </div>
-                <div class="Account-overview__Edit-Btn">Edit Profile</div>
             </div>
         </div>
     );

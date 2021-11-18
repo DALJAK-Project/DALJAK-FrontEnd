@@ -3,10 +3,10 @@ body {
 }
 
 .tab-wrap {
-    margin-top: 200px;
+    margin-top: 5%;
     display: flex;
     width: 80%;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 
 .tab {
@@ -24,6 +24,7 @@ button{
     text-align:left;
     font-weight: 600;
     padding:20px 0px;
+    cursor:pointer;
 }
 @media screen and (max-width: 1800px) {
     .tab-wrap {
