@@ -5,7 +5,7 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-import "../Community/Category";
+import "./Category";
 
 class Category extends Component {
   constructor(props) {

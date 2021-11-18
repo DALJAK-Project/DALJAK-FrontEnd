@@ -1,6 +1,6 @@
 import react, { Component } from "react";
 import community_crate from "../css/community/community_create.css";
-import Nav from "../components/Nav";
+import Nav from "../Routes/components/Nav";
 // NOTE: Use the editor from source (not a build)!
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";

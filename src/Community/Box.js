@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
 import "../css/community/community__topbox.css";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
-import Category from "../Community/Category";
+import Category from "./Category";
 import { Link } from "react-router-dom";
 import Create from "./Create";
 

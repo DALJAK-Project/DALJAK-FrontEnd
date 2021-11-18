@@ -1,19 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
+import {
+  HashRouter,
+  Route,
+  Routes,
+  BrowserRouter,
+  Router,
+} from "react-router-dom";
 import Community from "./Community/Community";
 import Create from "./Community/Create";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        {/* <Community></Community> */}
-        <Create></Create>
-      </div>
-      // route가 뭔가를 감싸야한다는데 뭔진 잘 모르겠다
-      // 아무것도 뜨지를 않는다
-      // o 라우터가 지금 안나와 이게 뭐가 문제인진 모르겠는데
-    );
-  }
-}
+// App.js에 있던 Aladin, LionKing, SpiderMan을
+// Components/Routes.js 로 이동
+export default () => (
+  <Router>
+    <Routes>
+      <Route path="/about" component={Community} exact={true} />
+      <Route path="/create" component={Create} />
+    </Routes>
+  </Router>
+);
 
-export default App;
+// 라우터가 안되는 이유가 뭘까?????

@@ -15,12 +15,13 @@ class Dropdown extends Component {
       lists.push(
         <div key={data[i].id}>
           <div
-            data={data[i].id}
+            data-id={data[i].id}
             onClick={function (e) {
               e.preventDefault();
               this.props.onChangeDropdwon(e.target.dataset.id);
             }.bind(this)}
-            class="community-create-menu"
+            // 여기서 온클릭됐을때 버튼은 noen으로
+            className="community-create-menu"
           >
             {data[i].title}
           </div>
@@ -28,7 +29,11 @@ class Dropdown extends Component {
       );
       i = i + 1;
     }
-    return <div>{lists}</div>;
+    return (
+      <div>
+        <div>{lists}</div>;
+      </div>
+    );
   }
 }
 export default Dropdown;

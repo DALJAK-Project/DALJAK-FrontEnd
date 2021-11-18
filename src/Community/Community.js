@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Box from "../Community/Box";
-import Posts from "../Community/Posts";
-import Recent from "../Community/Recent";
-import Search from "../Community/Search";
+import Box from "./Box";
+import Posts from "./Posts";
+import Recent from "./Recent";
+import Search from "./Search";
 import Nav from "../components/Nav";
 import "../css/community/community__topbox.css";
 import axios from "axios";
@@ -12,39 +12,6 @@ class Community extends Component {
     super(props);
     this.state = {
       data: 1,
-      // content_a = [
-      //   {
-      //     id: "1", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   },
-      //   {
-      //     id: "1", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   },
-      //   {
-      //     id: "1", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   }
-      // ],
-      // content_b = [
-      //   {
-      //     id: "2", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   },
-      //   {
-      //     id: "2", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   },
-      //   {
-      //     id: "2", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   }
-      // ],
-      // content_c = [
-      //   {
-      //     id: "3", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   },
-      //   {
-      //     id: "3", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   },
-      //   {
-      //     id: "3", tilte: "hello", date: "2021/11/4", desc: "abdsd",
-      //   }
-      // ],
     };
   }
 
