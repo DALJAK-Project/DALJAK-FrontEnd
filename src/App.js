@@ -12,12 +12,12 @@ import Create from "./Community/Create";
 // App.js에 있던 Aladin, LionKing, SpiderMan을
 // Components/Routes.js 로 이동
 export default () => (
-  <Router>
+  <BrowserRouter>
     <Routes>
-      <Route path="/about" component={Community} exact={true} />
-      <Route path="/create" component={Create} />
+      <Route path="/" element={<Community />} />
+      <Route path="/create" element={<Create />} />
     </Routes>
-  </Router>
+  </BrowserRouter>
 );
 
 // 라우터가 안되는 이유가 뭘까?????

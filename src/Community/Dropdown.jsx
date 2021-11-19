@@ -31,7 +31,7 @@ class Dropdown extends Component {
     }
     return (
       <div>
-        <div>{lists}</div>;
+        <div>{lists}</div>
       </div>
     );
   }
