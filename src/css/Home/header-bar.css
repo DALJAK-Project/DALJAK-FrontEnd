@@ -4,7 +4,6 @@
 
 .header-bar {
     position: absolute;
-    width: 100%;
     height: 105px;
     left: 0px;
     top: 0px;
@@ -38,9 +37,11 @@
     flex: auto;
     margin: 0px 50px;
 }
+
 .header-bar__menu li:first-child {
     color: #8efcba;
 }
+
 .header-bar__login {
     align-items: center;
     width: 25%;
@@ -85,15 +86,18 @@
     /* identical to box height */
     color: #ffffff;
 }
-.lang{
-    margin-right:10%;
-    display:flex;
+
+.lang {
+    margin-right: 10%;
+    display: flex;
 }
-.lang--text{
-    font-size:18px;
-    font-style:normal;
-    color:#ffffff;
+
+.lang--text {
+    font-size: 18px;
+    font-style: normal;
+    color: #ffffff;
 }
+
 .header-bar__login--profile {
     /* position: absolute;
     left: 108.1%;
