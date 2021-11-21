@@ -4,6 +4,7 @@
 
 .header-bar {
     position: absolute;
+    width: 100%;
     height: 105px;
     left: 0px;
     top: 0px;
@@ -15,10 +16,11 @@
     justify-content: center;
     align-items: center;
     padding: 0px;
-    flex-direction: row;
+    position: absolute;
     width: 100%;
     height: 25px;
     top: 40px;
+    right: 60px;
 }
 
 .header-bar__menu ul {
@@ -27,28 +29,37 @@
     list-style-type: none;
 }
 
+.header-bar__menu li:first-child {
+    color: #8efcba;
+}
+
 .header-bar__menu li {
+    position: static;
+    left: calc(50% - 54px / 2 - 180.5px);
+    top: 0px;
     font-family: Noto Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
+    /* identical to box height */
+    /* color: #8efcba; */
     color: #ffffff;
-    flex: auto;
-    margin: 0px 50px;
-}
-
-.header-bar__menu li:first-child {
-    color: #8efcba;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 56px;
 }
 
 .header-bar__login {
+    position: absolute;
     align-items: center;
-    width: 25%;
-    top: 43px;
+    width: 100%;
+    top: 32px;
     display: flex;
     justify-content: flex-end;
-    right: 15%;
+    right: 100px;
 }
 
 .header-bar__signup {
@@ -58,6 +69,7 @@
 }
 
 .header-bar__signup--square {
+    position: absolute;
     width: 74px;
     height: 32px;
     background: #ffffff;
@@ -66,6 +78,7 @@
 
 .header-bar__signup--text {
     align-items: center;
+    position: absolute;
     font-family: Noto Sans;
     font-style: normal;
     font-weight: bold;
@@ -84,17 +97,6 @@
     font-weight: bold;
     font-size: 18px;
     /* identical to box height */
-    color: #ffffff;
-}
-
-.lang {
-    margin-right: 10%;
-    display: flex;
-}
-
-.lang--text {
-    font-size: 18px;
-    font-style: normal;
     color: #ffffff;
 }
 

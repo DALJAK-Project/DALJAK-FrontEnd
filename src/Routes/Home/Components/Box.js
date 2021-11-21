@@ -60,11 +60,11 @@ export function Box() {
             </span>
           </div>
         </div>
-        <div class="home-box__dot">
-          <p class="v10"></p>
-          <p class="v10"></p>
-          <p class="v10"></p>
-        </div>
+      </div>
+      <div class="home-box__dot">
+        <p class="v10"></p>
+        <p class="v10"></p>
+        <p class="v10"></p>
       </div>
     </div>
   );
