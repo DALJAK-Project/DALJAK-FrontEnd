@@ -2,8 +2,12 @@
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 104px;
+    top: 144px;
     border: 5px dashed white;
+}
+
+.logoImage {
+    margin-top: 60px;
 }
 
 .v2_1349 {
