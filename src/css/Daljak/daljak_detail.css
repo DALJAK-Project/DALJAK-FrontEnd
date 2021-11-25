@@ -1,0 +1,70 @@
+.Daljak-DetailPage-container {
+    position:relative;
+    text-align: center;
+}
+.page-title {
+    /* position: absolute; */
+    /* width: 1252px; */
+    height: 47px;
+    /* left: 58px; */
+    margin-top: 50px;
+    padding: 50px 0;
+  
+
+}
+.page-title .title-text {
+    /* position: absolute; */
+    /* width: 1252px; */
+    height: 37px;
+    left: 58px;
+    top: 196px;
+    
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    
+    /* Black */
+    
+    color: #222222;
+  }
+.search-container {
+    position:relative;
+    width: 660px;
+    height: 67px;
+    margin: 0 auto;
+}
+.search-container .search-bar {
+    width: 660px;
+    height: 67px;
+
+    background: #FFFFFF;
+    /* Primary/Purple_dark */
+    border: 2px solid #6759F6;
+    box-sizing: border-box;
+    border-radius: 50px;
+ }
+.search-container .search-bar-icon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.search-tag {
+    width: 518px;
+    height: 25px;
+    /* left: 480px;
+    top: 371.98px; */
+    margin: 0 auto;
+}
+.search-tag ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    justify-content: center;
+}
+.search-tag ul li.tag-item {
+    font-size: 20px;
+    padding: 0 5px;
+}
