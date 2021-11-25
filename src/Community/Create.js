@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import Dropdown from "./Dropdown";
+import Subject from "./Subject";
 
 // 여기서 일단 fontawsome import 시키고
 // 자 여기서 부터 create 값을 입력받을시 e객체로 target값들 콘솔에다가 입력시켜보자
@@ -119,7 +120,7 @@ class Create extends Component {
                 />{" "}
               </p>{" "}
               {/* 그럼여기서 이거를 on submit했을때 target값을 받아와야해 */}{" "}
-              {/* 머리가 하얗다..  */}
+              {/* 머리가 하얗다..  */}{" "}
               <p class="community-create__p">
                 <div>
                   <button
@@ -153,7 +154,7 @@ class Create extends Component {
                         // 클릭하면 display none으로
                       }.bind(this)}
                     ></Dropdown>{" "}
-                  </Dropdown_box>
+                  </Dropdown_box>{" "}
                 </DropdownMenu>{" "}
               </p>{" "}
               {/* 클릭했을때 카테고리 이름 변경되게끔 */}{" "}
@@ -180,11 +181,12 @@ class Create extends Component {
               />{" "}
             </form>{" "}
           </div>{" "}
+          <Subject title="제목" desc="부제목"></Subject>
         </div>{" "}
       </div>
     );
     //   잴 먼저 해야할것 form을 만들자
-    //
+    // onsubmit했을때 받을것들
   }
 }
 

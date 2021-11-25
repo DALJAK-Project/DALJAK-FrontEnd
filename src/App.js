@@ -24,6 +24,7 @@ export default () => (
       <Route path="/daljak" element={<Daljak/>} />
        <Route path="/create" element={<Create/>} />
        <Route path="/about" element={<Community/>} exact={true} />
+      <Route path="/" element={<Community />} />
     </Routes>
   </BrowserRouter>
 );

@@ -41,9 +41,13 @@ class Box extends Component {
         <div class="community__box--button">
           {/* 일단 react router dom 이 실행이 안돼 */}
           {/* 라우터??? 라우터가 왜 필요하지 */}
-          <a href="./Create">
+          <Link
+            to="/create
+          
+          "
+          >
             <button> {/* 이거 클릭하면 create로 이동하게끔하자 */}</button>
-          </a>
+          </Link>
         </div>
         <Category
           category={categoryList}

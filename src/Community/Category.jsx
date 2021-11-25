@@ -32,16 +32,9 @@ class Category extends Component {
             <span>사회</span>
             <span>인문</span>
             <span>예체능</span>
-            <span>체육</span>{" "}
+            {/* <span>체육</span>{" "} */}
           </div>
         </div>
-        <button
-          className="community__box--category--icon"
-          onClick={this.imgChangeLeft}
-          //   style={{ display: this.state.display }}
-        >
-          <FontAwesomeIcon icon={faChevronRight} />
-        </button>
       </div>
     );
   }
