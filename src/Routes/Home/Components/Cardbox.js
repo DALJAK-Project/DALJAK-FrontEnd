@@ -70,19 +70,10 @@ class Cardbox extends React.Component {
   render() {
     return (
       <div class="home-cardbox">
-        {/* <div class="v2_1348">
-        <div class="home-cardbox__text">
-          <span class="v2_1350">
-            우리들의 <StyledSpan>작품</StyledSpan>을 공유하는 공간
-          </span>
-        </div>
-        </div> */}
-
-        <div class="home-cardbox__text">
-          <span>
-            우리들의
-            <StyledSpan>작품</StyledSpan>을 공유하는 공간
-          </span>
+        <div class="v2_1348">
+          <div class="home-cardbox__text">
+              <span class="v2_1350">우리들의 작품을 <StyledSpan>공유</StyledSpan>하는 공간</span>
+          </div>
         </div>
         <div class="home-cardbox__text--main">
           세상에 하나뿐인 작품을 이곳에 공유해 보세요!

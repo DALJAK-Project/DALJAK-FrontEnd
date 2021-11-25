@@ -2,18 +2,27 @@ import React from "react";
 import '../../../css/Mypage/header-bar.css';
 import Logo from "../../../img/logo.png";
 import { Link } from "react-router-dom";
-/*<Router>
-                <li><Link to = "/">Home</Link></li>
-                <li><Link to = "/other">다른달작</Link></li>
-                <li><Link to = "/my">내달작</Link></li>
-                <li><Link to = "/community">커뮤니티</Link></li>
-                </Router>*/
+import styled from "styled-components";
+const SLink=styled(Link)`
+    display:block;
+    textDecoration:none;
+`;
+const Head = () =>{
+    return(
+        <div class="header-bar__menu">
+            <ul>
+                <li><SLink to="/">Home</SLink></li>
+                <li><SLink to="/other">다른달작</SLink></li>
+                <li><SLink to="/my">내달작</SLink></li>
+                <li><SLink to="/community">커뮤니티</SLink></li>
+            </ul>
+        </div>
+    );
+}
 export function Header(){
     return(
         <div class="header-bar">
-            <div class="header-bar__menu">
-                
-            </div>
+            <Head />
             <div class="header-bar__login">
                 <div class="header-bar__signup">
                 <div class="header-bar__signup--square"></div>

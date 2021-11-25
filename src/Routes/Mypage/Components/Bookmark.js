@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faHome,faEdit,faBookmark,faLock} from "@fortawesome/free-solid-svg-icons";
 import '../../../css/Mypage/edit.css';
 import more1 from '../../../img/more-a.png';
 import more2 from '../../../img/more-b.png';
@@ -11,7 +13,7 @@ export function Bookmark(){
     return(
         <div class="tab-content">
             <div class="edit">
-                <div class="edit__title">Bookmark</div>
+                <div class="edit__title"><FontAwesomeIcon icon={faBookmark}/>Bookmark</div>
                 <div class="group">        
                     <div class="post__title">달작 게시물</div>
                     <div class="post__more">more+</div>
