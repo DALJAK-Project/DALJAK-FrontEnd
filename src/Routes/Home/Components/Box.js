@@ -1,6 +1,8 @@
 import React from "react";
 import "../../../css/Home/home-box.css";
 import logo from "../../../public/img/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faPlusCircle } from "@fortawesome/free-solid-svg-icons";
 
 const Blue = ({ title, desc }) => (
   <div class="home-box__review--blue">
@@ -54,7 +56,10 @@ export function Box() {
               <div class="home-box__review--white--titlebox">
                 <div class="home-box__review--blue__title">후기 게시 등록</div>
                 <div>
-                  <i class="material-icons">add_circle_outline</i>
+                  <div class="Account-overview__title"><FontAwesomeIcon icon={faPlusCircle}/>
+                  /*링크 만들기*/
+                  </div>
+                  
                 </div>
               </div>
               <span class="home-box__review--blue__desc">

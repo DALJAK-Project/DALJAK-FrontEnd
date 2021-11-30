@@ -8,9 +8,10 @@ import Img4 from "../../../img/photo.png";
 import Img5 from "../../../img/arc.png";
 import Img6 from "../../../img/news.png";
 import Img7 from "../../../img/podcast.png";
-const StyledSpan = styled.span`
-  background-color: rgba(129, 106, 254, 1);
-`;
+const StyledSpan = styled.span`  
+  background-color: rgba(129, 106, 254, 1);  
+  color: rbga(142,252,182,1);
+  `;
 const TopImg = styled.img`
   width: 340.72px;
   height: 168.53px;
@@ -72,7 +73,9 @@ class Cardbox extends React.Component {
       <div class="home-cardbox">
         <div class="v2_1348">
           <div class="home-cardbox__text">
-              <span class="v2_1350">우리들의 작품을 <StyledSpan>공유</StyledSpan>하는 공간</span>
+              <span class="v2_1350">
+                우리들의 작품을 <StyledSpan>공유</StyledSpan>하는 공간
+                </span>
           </div>
         </div>
         <div class="home-cardbox__text--main">

@@ -7,7 +7,7 @@ import {Bookmark} from "../Components/Bookmark";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faEdit,faBookmark,faLock, faHandHolding} from "@fortawesome/free-solid-svg-icons";
 import {EditProfile} from "../Components/EditProfile";
-import Circle from "../../../img/circle.PNG";
+import Circle from "../../../img/circle.png";
 
 /*<img src={Circle} width="30px" height="30px" margin="15px"/>*/
 

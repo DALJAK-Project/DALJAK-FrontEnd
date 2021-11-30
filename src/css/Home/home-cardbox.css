@@ -16,11 +16,12 @@
 .home-cardbox__text {
     display: flex;
     justify-content: center;
-    color: black;
+    align-items: center;
+    /*color: black;*/
 }
 
 
-/* .v2_1348 {
+ .v2_1348 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -30,10 +31,10 @@
     background-size: cover;
     opacity: 1;
     position: absolute;
-    top: 1060px;
+    top: 860px;
     left: 0px;
     overflow: hidden;
-} */
+} 
 
 .v2_1350 {
     width: 100%;
@@ -42,8 +43,7 @@
     left: 0px;
     font-size: 64px;
     opacity: 1;
-    text-align: center;
-    top: 800px;
+    text-align: center;   
 }
 
 .home-cardbox__search--text {
@@ -67,7 +67,7 @@
     margin-left: 30px;
     font-size: 18px;
 } */
-
+/*
 .home-cardbox__text {
     color: #232323;
     font-family: Noto Sans;
@@ -79,9 +79,9 @@
     display: flex;
     margin-bottom: 40px;
 }
-
+*/
 .home-cardbox__text--main {
-    color: #232323;
+    /*color: #232323;*/
     font-family: Noto Sans;
     font-weight: Regular;
     font-size: 36px;
@@ -105,7 +105,7 @@
     line-height: 87px;
     text-align: center;
     /* Black */
-    color: #222222;
+    /*color: #222222;*/
 }
 
 .home-cardbox__search {
