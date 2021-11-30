@@ -3,6 +3,15 @@ import Nav from "./Nav";
 
 import '../css/Daljak/daljak_detail.css';
 function DaljakDetail() {
+
+    const imgDetailList = [
+        "detail1.jpg","detail2.jpg","detail4.jpg","detail3.jpg","detail4.jpg","detail3.jpg","detail1.jpg","detail1.jpg","detail1.jpg","detail1.jpg","detail1.jpg",
+    ];
+    const imgDetail = imgDetailList.map((img) => (
+        <div className="item">
+        <img src={require(`../img/${img}`).default} alt="sss" />
+    </div>
+    ))
     return (
         
         <div className="Daljak-DetailPage">
@@ -25,7 +34,10 @@ function DaljakDetail() {
                         </ul>
                     </div>
                 </div>
+                <div className="detail-items-container">    
+                      {imgDetail}
 
+                </div>
             </div>
         </div>
     )

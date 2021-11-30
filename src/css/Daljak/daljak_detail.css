@@ -68,3 +68,20 @@
     font-size: 20px;
     padding: 0 5px;
 }
+
+
+/* img container */
+.detail-items-container {
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.detail-items-container .item  {
+    width: 30%;
+    height: fit-content;
+}
+.detail-items-container .item img {
+    width: 100%;
+}
