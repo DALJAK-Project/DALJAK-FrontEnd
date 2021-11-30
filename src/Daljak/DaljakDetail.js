@@ -5,11 +5,47 @@ import '../css/Daljak/daljak_detail.css';
 function DaljakDetail() {
 
     const imgDetailList = [
-        "detail1.jpg","detail2.jpg","detail4.jpg","detail3.jpg","detail4.jpg","detail3.jpg","detail1.jpg","detail1.jpg","detail1.jpg","detail1.jpg","detail1.jpg",
+        {
+            key: 1,
+            imgUrl : "detail1.jpg"
+        },
+        {
+            key: 2,
+            imgUrl : "detail2.jpg"
+        },
+        {
+            key: 3,
+            imgUrl : "detail3.jpg"
+        },
+        {
+            key: 4,
+            imgUrl : "detail4.jpg"
+        },
+        {
+            key: 5,
+            imgUrl : "detail2.jpg"
+        },
+        {
+            key: 6,
+            imgUrl : "detail1.jpg"
+        },
+        {
+            key: 7,
+            imgUrl : "detail3.jpg"
+        },
+        {
+            key: 8,
+            imgUrl : "detail3.jpg"
+        },
+        
     ];
+    const handleImgClick = (e) => {
+        // console.log(e.target.dataset.key);
+        const targetKey = e.target.dataset.key;
+    }
     const imgDetail = imgDetailList.map((img) => (
-        <div className="item">
-        <img src={require(`../img/${img}`).default} alt="sss" />
+        <div className="item" onClick={handleImgClick}  key={img.key}>
+        <img src={require(`../img/${img.imgUrl}`).default} alt="img" data-key={img.key}/>
     </div>
     ))
     return (
