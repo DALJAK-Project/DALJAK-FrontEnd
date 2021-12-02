@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import "../../../css/Home/home-box.css";
 import logo from "../../../public/img/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,12 +29,15 @@ const Purple = ({ title, desc }) => (
     </div>
   </div>
 );
+const A=styled.a`
+  text-decoration:none;
+`;
 export function Box() {
   return (
     <div class="home-box">
       <div class="home-box__logo">
         <div class="home-box__img">
-          <img src={logo} className="logoImage" alt="iPhone_01" />
+          <A href="/"><img src={logo} className="logoImage" alt="iPhone_01" /></A>
         </div>
         <div class="home_accessories"></div>
       </div>
@@ -56,10 +60,12 @@ export function Box() {
               <div class="home-box__review--white--titlebox">
                 <div class="home-box__review--blue__title">후기 게시 등록</div>
                 <div>
-                  <div class="Account-overview__title"><FontAwesomeIcon icon={faPlusCircle}/>
-                  /*링크 만들기*/
-                  </div>
-                  
+                  <A href="">
+                    <div class="Account-overview__title">
+                      <FontAwesomeIcon icon={faPlusCircle}/>
+                      
+                    </div>
+                  </A>
                 </div>
               </div>
               <span class="home-box__review--blue__desc">

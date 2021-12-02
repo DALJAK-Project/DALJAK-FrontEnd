@@ -8,6 +8,7 @@ import Img4 from "../../../img/photo.png";
 import Img5 from "../../../img/arc.png";
 import Img6 from "../../../img/news.png";
 import Img7 from "../../../img/podcast.png";
+import search from "../../../public/img/searchmagnifierinterfacesymbol1_79893.png";
 const StyledSpan = styled.span`  
   background-color: rgba(129, 106, 254, 1);  
   color: rbga(142,252,182,1);
@@ -51,9 +52,18 @@ const Form = styled.form`
   justify-content: flex-start;
   align-items: center;
 `;
-/*Search for music, art, culture...*/
+/*
+json에서 img 받아오기, 서버에서 조회수높은 7개 링크 변수에 넣어서 넘겨주기 
+*/
+const Img = styled.img`
+  justify-content:center;
+  margin-top:0;
+  margin-right:15px;
+  max-width:5%;
+  height:auto;
+`;
 class Cardbox extends React.Component {
-  /*constructor(props){
+  constructor(props){
         super(props);
         this.state={
             searchTerm:"",
@@ -62,12 +72,15 @@ class Cardbox extends React.Component {
         };
     }
     handleSubmit=event=>{
-        event.preventDefault();
-        const {searchTerm}=this.state;
-        if({searchTerm}!=""){
-            this.searchByterm()
-        }
-    }*/
+      event.preventDefault();
+      const {searchTerm}=this.state;
+      if({searchTerm}!=""){
+          this.searchByterm()
+      }
+    }
+    clickSubmit=event=>{
+      event.preventDefault();
+    }
   render() {
     return (
       <div class="home-cardbox">
@@ -82,7 +95,13 @@ class Cardbox extends React.Component {
           세상에 하나뿐인 작품을 이곳에 공유해 보세요!
         </div>
         <Form>
-          <Input placeholder="Search for music, art, culture..." />
+          <Input 
+            placeholder="Search for music, art, culture..."
+            onChange={this.handleSubmit}
+          />
+          <Img 
+            src={search} className="logoImage" alt="iPhone_01"
+          />
         </Form>
         <div class="home-cardbox__tag">
           <span class="v44_554">#rock</span>
@@ -92,6 +111,7 @@ class Cardbox extends React.Component {
           <span class="v44_558">#badminton</span>
           <span class="v44_559">#comedy</span>
         </div>
+        
         <div class="home-cardbox__card">
           <span class="div">
             <TopImg src={Img1} />

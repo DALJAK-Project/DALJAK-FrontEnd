@@ -8,7 +8,7 @@ class App extends Component{
     return(
       <HashRouter>
         <Routes>
-          <Route path="/" exact={true} element={<Mypage/>}/>
+          <Route path="/" exact={true} element={<Home/>}/>
           <Route path="/my" element={<Mypage/>}/>
         </Routes>
       </HashRouter>
