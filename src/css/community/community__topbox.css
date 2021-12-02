@@ -116,7 +116,18 @@ button:active {
     line-height: 60px;
 }
 
-.community__recent--whitebox>div {
+.community__recent-box {
+    display: flex;
+    align-items: center;
+}
+
+.community__recent-whitebox {
+    display: flex;
+    overflow: hidden;
+    width: 40%;
+}
+
+.community_recent-whitebox--text {
     width: 497px;
     height: 295px;
     background: #ffffff;
