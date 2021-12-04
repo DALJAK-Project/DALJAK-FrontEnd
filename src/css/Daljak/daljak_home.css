@@ -11,65 +11,60 @@
     position: absolute;
     top: 204.98px;
     width: 100%;
-    left: 0;
-    right: 0;
 }
-.daljak__center {
-    max-width: 100vw;
-    overflow: hidden;
+
+.daljak__box--it {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .daljak__box--cardlist {
     display: flex;
     align-items: center;
 }
+
 .daljak__box--cardlist div {
     margin-left: 15px;
 }
-.daljak__box__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-}
 
 .daljak__box--cardlist--card {
-    text-align: center;
-    /* margin-top: 20px; */
-    /* height: 180px; */
-    height: fit-content;
-    border-radius: 16px; 
+    margin-top: 20px;
+    width: 280px;
+    height: 180px;
+    border-radius: 16px;
 }
-.daljak__box--cardlist--card img {
-    width: 250px;
-}
+
 .fa-play-circle {
     position: relative;
     right: 17px;
 }
 
+.daljak__box--science {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
 
 .daljak__center {
     display: flex;
     justify-content: center;
 }
 
-.daljak__box--text {
-    width: calc(250px * 5);
-    /* width: 34%;
+.daljak__box--act {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.daljak__box--it--text {
+    width: 34%;
     position: relative;
-    align-items: flex-end; */
-    margin: 20px 0;
+    left: 14%;
+    align-items: flex-end;
 }
-/* 추가 */
-.daljak__box--title {
-    font-family: Noto Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    margin-right: 10px;
-}
+
 .daljak__box--it--title {
     font-family: Noto Sans;
     font-style: normal;
@@ -116,11 +111,11 @@
 }
 
 .daljak__category--box--today {
+    width: 100%;
     margin-top: 80px;
     display: flex;
     position: relative;
     left: 17%;
-    width: fit-content;
 }
 
 .daljak__box--cardlist--card--today {
@@ -184,12 +179,11 @@
         padding-bottom: 20 px;
     }
     .daljak__category--box--today {
+        width: 100%;
         margin-top: 80 px;
         display: flex;
         position: relative;
         left: 7%;
-    width: fit-content;
-
     }
     .daljak__deco--bottom {
         display: inline-block;

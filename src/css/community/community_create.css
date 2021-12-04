@@ -1,0 +1,68 @@
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {
+    min-height: 500px;
+}
+
+.community-create {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.community-create__text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.community-create__form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.community-create__input {
+    display: inline-block;
+    justify-content: flex-start;
+    width: 1140px;
+    padding: 15px;
+    background: #fcfcfd;
+    /* grey 90 */
+    border: 1px solid #cfd0d7;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: start;
+}
+
+.ck-reset {
+    width: 80%;
+}
+
+.community-create__box {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 콘솔 로그에서 직으면 변경 안됨  */
+
+.community-create-menu {
+    justify-content: center;
+    width: 1140px;
+    align-self: stretch;
+    padding: 10px;
+    background: #fcfcfd;
+    border: 1px solid #cfd0d7;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.community-create-menu--none {
+    display: none;
+}
+
+.community-create-menu:hover {
+    background-color: gray;
+}
