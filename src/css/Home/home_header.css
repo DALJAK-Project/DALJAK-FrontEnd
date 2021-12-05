@@ -1,0 +1,162 @@
+* {
+    list-style-type: none;
+}
+
+.home-header {
+    display:grid;
+    position:relative;
+    align-content:center;
+    background:#85a7ff;
+    height:105px;
+    box-sizing: border-box;
+}
+.inner{
+    position:relative;
+    display:flex;
+    max-width:100%;
+    padding: 0 50px;
+    height:100%;
+}
+
+
+.inner-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px 0px 10%;
+    width: 65%;
+    height: 100%;
+}
+.inner-left ul{
+    display:flex;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    margin-top:0px;
+    margin-bottom:0px;
+    
+}
+.inner-li{
+    padding: 25px 25px 23px 25px;
+}
+.inner-a{
+    padding: 1vw 1vh;
+    margin: 1vw 1vh;
+    font-weight:bold;
+    line-height: 1.3;
+    font-size:19px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.inner-a2{
+    padding: 1vw 1vh;
+    margin:1vw 1vh;
+    font-weight:bold;
+    line-height: 1.3;
+    font-size:19px;
+    color: #8efcba;
+    text-decoration: none;
+}
+
+.inner-right{
+    position:relative;
+    display: flex;
+    justify-content:space-between;
+    
+    align-content: center;
+    float: right;
+    height: 100%;
+    width:35%;
+}
+.inner-right-ul{
+    display:flex;
+    height:100%;
+    width:70%;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0;
+    margin-top:0;
+}
+.inner2-li{
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+.home__signup--square {
+    position:relative;
+    text-align:center;
+    font-weight:bold;
+    font-size:19px;
+    line-height:normal;
+    text-decoration:none;
+    
+    color:#6759f6;
+}
+.home__login{
+    position:relative;
+    color:#ffffff;
+    text-align: center;
+
+    font-size:19px;
+    font-weight: bold;
+    text-decoration:none;
+}
+.user-thing{
+    display:flex;
+}
+.user-ul{
+    display:flex;
+    height:100%;
+    align-items:center;
+    padding: 0;
+    margin-top:0;
+}
+/*
+.header-bar__login {
+    display: block;
+    float:right;
+    position: relative;
+    margin-right: -12px;
+}
+
+.header-bar__signup {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.header-bar__signup--text {
+    align-items: center;
+    position: absolute;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    /* identical to box height */
+    /* Primary/Purple 
+    color: #816afe;
+    margin: 0px;
+}
+
+.header-bar__login--text {
+    margin: 0px 0;
+    height: 19px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    /* identical to box height 
+    color: #ffffff;
+}
+
+.header-bar__login--profile {
+    /* position: absolute;
+    left: 108.1%;
+    right: 3.12%;
+    padding: 6px 0;
+    margin: 6px 0px 0px 10px; 
+    margin-left: 20px;
+}
+*/

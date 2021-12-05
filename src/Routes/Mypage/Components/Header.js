@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../css/Mypage/header-bar.css';
+import '../../../css/Mypage/mypage_header.css';
 import Logo from "../../../img/logo.png";
 import { Link } from "react-router-dom";
 import styled from "styled-components";

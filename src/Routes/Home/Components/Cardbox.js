@@ -40,7 +40,7 @@ const Input = styled.input`
 `;
 const Form = styled.form`
   position: absolute;
-  top: 1060px;
+  top: 200px;
   width: 660px;
   height: 67px;
   display: flex;
@@ -64,26 +64,26 @@ const Img = styled.img`
 `;
 class Cardbox extends React.Component {
   constructor(props){
-        super(props);
-        this.state={
-            searchTerm:"",
-            loading:false,
-            error:null
-        };
+    super(props);
+    this.state={
+        searchTerm:"",
+        loading:false,
+        error:null
+    };
+  }
+  handleSubmit=event=>{
+    event.preventDefault();
+    const {searchTerm}=this.state;
+    if({searchTerm}!=""){
+        this.searchByterm()
     }
-    handleSubmit=event=>{
-      event.preventDefault();
-      const {searchTerm}=this.state;
-      if({searchTerm}!=""){
-          this.searchByterm()
-      }
-    }
-    clickSubmit=event=>{
-      event.preventDefault();
-    }
+  }
+  clickSubmit=event=>{
+    event.preventDefault();
+  }
   render() {
     return (
-      <div class="home-cardbox">
+      <body class="home-cardbox">
         <div class="v2_1348">
           <div class="home-cardbox__text">
               <span class="v2_1350">
@@ -135,7 +135,7 @@ class Cardbox extends React.Component {
             <OutterImg src={Img7} />
           </span>
         </div>
-      </div>
+      </body>
     );
   }
 }

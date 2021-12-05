@@ -7,7 +7,7 @@ import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
-import Dropdown from "./Dropdown";
+import Dropdown from "../../Community/Dropdown";
 
 // 여기서 일단 fontawsome import 시키고
 // 자 여기서 부터 create 값을 입력받을시 e객체로 target값들 콘솔에다가 입력시켜보자
