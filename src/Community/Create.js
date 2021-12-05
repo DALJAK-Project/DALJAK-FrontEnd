@@ -20,17 +20,18 @@ const DropdownMenu = styled.div`
 
 function Create() {
   const [index, setindex] = useState("xx");
-
   const [viewContent, setViewContent] = useState([]);
   const [inputContent, setInputContent] = useState({
+    id: "",
     title: "",
     tag: "",
     content: "",
   });
 
-  const onChange = (e) => setInputContent(e.target.value);
+  // const onChange = (e) => setInputContent(e.target.value);
 
-  const onSumbit = (e) => {
+  const onClick = (e) => {
+    e.preventDefault();
     setViewContent(viewContent.concat({ ...inputContent }));
   };
 
@@ -52,7 +53,7 @@ function Create() {
       <div class="community-create">
         <h1 class="community-create__text"> 커뮤니티 글쓰기 </h1>{" "}
         <div class="community-create__box">
-          <form class="community-create__form" action="" onSubmit={onSumbit}>
+          <form class="community-create__form" action="">
             {/* 폼 class이름을 변경 */}
             <p>
               <input
@@ -70,7 +71,7 @@ function Create() {
                 placeholder="제목"
               />
             </p>{" "}
-            {/* 이거 두개를 따로 만들어야한다 */}
+            {/* 이거 두개를 따로 만들어야한다 */} <div className=""></div>
             <p>
               {/* o 왜 같이 입력값이 나올까 */}
               <input
@@ -167,14 +168,18 @@ function Create() {
                 console.log("Focus.", editor);
               }}
             />{" "}
-            <button className="community-create__submit-button"></button>
+            <button
+              onClick={onClick}
+              className="community-create__submit-button"
+              key={index}
+            ></button>
+            {viewContent.map((element) => (
+              <div key={inputContent.id}>
+                <h2>{element.title}</h2>
+                <div>{element.content}</div>
+              </div>
+            ))}
           </form>{" "}
-          {viewContent.map((element) => (
-            <div>
-              <h2>{element.title}</h2>
-              <div>{element.content}</div>
-            </div>
-          ))}
         </div>{" "}
       </div>{" "}
     </div>
