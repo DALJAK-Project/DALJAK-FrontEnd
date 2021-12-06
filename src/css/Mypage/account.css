@@ -20,7 +20,8 @@
 
 .Account-overview__cnt-title {
     color: rgb(110, 168, 255);
-    width: 20%;
+    box-sizing:border-box;
+    min-width:100px;
     margin-left: 10px;
     font-weight: bold;
 }

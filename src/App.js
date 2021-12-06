@@ -9,7 +9,7 @@ class App extends Component{
     return(
       <HashRouter>
         <Routes>
-          <Route path="/" exact={true} element={<Mypageg/>}/>
+          <Route path="/" exact={true} element={<Mypage/>}/>
           <Route path="/community" element={<Community/>}/>
           <Route path="/my" element={<Mypage/>}/>
         </Routes>

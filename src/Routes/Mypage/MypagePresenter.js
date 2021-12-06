@@ -3,7 +3,7 @@ import {Header} from "./Components/Header";
 import Profile from "./Components/Profile";
 import Tab from "./Components/Tab";
 
-function Mypage_Home_Presenter(){
+function Mypage_Home_Presenter({desc,img}){
     return( 
         <>
             <Header />

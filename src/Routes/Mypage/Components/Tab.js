@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import '../../../css/Mypage/tab.css';
 import {Account} from "../Components/Account";
-import {Edit} from "../Components/Edit"; 
-import {Bookmark} from "../Components/Bookmark";
+import Edit from "../Components/Edit"; 
+import Post from "../Components/Post";
+import Bookmark from "../Components/Bookmark";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faEdit,faBookmark,faLock, faHandHolding} from "@fortawesome/free-solid-svg-icons";
 import {EditProfile} from "../Components/EditProfile";
@@ -20,7 +21,11 @@ class Tab extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            mode:"Account"
+            mode:"Account",
+            nickName:"hong1234",
+            email:"hong1234@naver.com",
+            firstname:"홍",
+            lastname:"길동"
         }
     }
     modeChange=(e)=>{
@@ -33,21 +38,21 @@ class Tab extends React.Component{
         let page;
         if(this.state.mode==="Account"){
             page=<Account 
-                nickName={"hong1234"}
-                Email={"hong1234@naver.com"}
-                firstName={"길동"}
-                lastName={"홍"}
+                nickName={this.state.nickName}
+                Email={this.state.email}
+                firstName={this.state.firstname}
+                lastName={this.state.lastname}
             />
         }else if(this.state.mode==="Edit"){
-            page=<Edit />
+            page=<Post />
         }else if(this.state.mode==="Bookmark"){
             page=<Bookmark />
         }else if(this.state.mode==="EditProfile"){
             page=<EditProfile 
-                nickName={"hong1234"}
-                Email={"hong1234@naver.com"}
-                firstName={"길동"}
-                lastName={"홍"}
+                nickName={this.state.nickName}
+                Email={this.state.email}
+                firstName={this.state.firstname}
+                lastName={this.state.lastname}
             />
         }else if(this.state.mode==="ChangePassword"){
             page="<Pwd />"
