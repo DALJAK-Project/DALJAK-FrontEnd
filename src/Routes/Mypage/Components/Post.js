@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faEdit,faBookmark,faLock} from "@fortawesome/free-solid-svg-icons";
 import '../../../css/Mypage/post.css';
 import styled from "styled-components";
-
+//이미지, 글, 본문 클릭시 이동->어디로?? 어떤걸 기준삼아야되지
 const A =styled.a`
     text-decoration:none;
 `;
