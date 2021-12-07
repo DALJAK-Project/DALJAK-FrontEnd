@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import '../../../css/Mypage/edit.css';
+import '../../../../css/Mypage/edit.css';
 
 const List=({list})=>{
     return(
@@ -12,7 +12,7 @@ const List=({list})=>{
                         <div class="post__input">{item.desc}</div>
                     </div>
                     
-                    <img src={require(`../../../img/${item.src}`).default} alt="" width="15%" float="right"/>
+                    <img src={require(`../../../../img/${item.src}`).default} alt="" width="15%" float="right"/>
                 </div>
             ))}
         </>

@@ -1,14 +1,13 @@
-import React,{useState}from "react";
+import React,{useState} from "react";
 import Pagination from "react-js-pagination";
-import List from "../Components/List";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faHome,faEdit,faBookmark,faLock} from "@fortawesome/free-solid-svg-icons";
-import '../../../css/Mypage/post.css';
-import styled from "styled-components";
-
-const A =styled.a`
-    text-decoration:none;
-`;
+import List from "./List";
+import '../../../../css/Mypage/post.css';
+//Editpost페이지의 more+ 링크에 해당
+/*
+    user 정보확인하여 일치하는 것 모두 표시
+    페이지네이션 사용하여 n개씩 끊기
+    https://ing-yeo.net/2020/10/react-beginner-3/ 코드 참고하기
+*/
 const Paging=()=>{
     const[page,setPage]=useState(1);
     const handlePageChange=(page)=>{
@@ -27,7 +26,7 @@ const Paging=()=>{
         />
     )
 }
-class Bookmark extends React.Component{
+class More extends React.Component{
     constructor(props){
         super(props);
         this.state={
@@ -52,9 +51,7 @@ class Bookmark extends React.Component{
             title:'Designing Dashboards',
             desc:'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.',
             src:'more-c.png'
-        }
-    ]
-    eventlist2=[
+        },
         {
             id:4,
             title:'Designing Dashboards',
@@ -78,27 +75,11 @@ class Bookmark extends React.Component{
         return(
             <div class="tab-content">
                 <div class="edit">
-                    <div class="edit__title"><FontAwesomeIcon icon={faBookmark}/>Bookmark</div>
-                    <div class="group">        
-                        <div class="post__title">달작 게시물</div>
-                        <A href="/edit_post">
-                            <div class="post__more">more+</div>
-                        </A>
-                    </div>
-                    <hr class="edit__line"/>
                     <List list={this.eventlist}/>
                 </div>
-                    <div class="edit"><div class="group">        
-                        <div class="post__title">커뮤니티 게시물</div>
-                        <A href="/edit__community">
-                            <div class="post__more">more+</div>
-                        </A>
-                    </div>
-                    <hr class="edit__line"/>
-                    <List list={this.eventlist2}/>
-                </div>
+                <Paging/>
             </div>
         );
     }
 }
-export default Bookmark;
+export default More;

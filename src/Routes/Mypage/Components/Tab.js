@@ -1,13 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import '../../../css/Mypage/tab.css';
-import {Account} from "../Components/Account";
-import Edit from "../Components/Edit"; 
-import Post from "../Components/Post";
-import Bookmark from "../Components/Bookmark";
+import {Account} from "./Tabinner/Account";
+import Edit from "./Tabinner/Editpost"; 
+import Post from "./Tabinner/Post";
+import More from "./Tabinner/Bookmark-more";
+import Bookmark from "./Tabinner/Bookmark";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome,faEdit,faBookmark,faLock, faHandHolding} from "@fortawesome/free-solid-svg-icons";
-import {EditProfile} from "../Components/EditProfile";
+import {EditProfile} from "./Tabinner/EditProfile";
 import Circle from "../../../img/circle.png";
 
 /*<img src={Circle} width="30px" height="30px" margin="15px"/>*/
@@ -44,7 +45,7 @@ class Tab extends React.Component{
                 lastName={this.state.lastname}
             />
         }else if(this.state.mode==="Edit"){
-            page=<Post />
+            page=<More />
         }else if(this.state.mode==="Bookmark"){
             page=<Bookmark />
         }else if(this.state.mode==="EditProfile"){

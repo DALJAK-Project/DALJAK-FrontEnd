@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../css/Mypage/account.css';
+import '../../../../css/Mypage/account.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faHome} from "@fortawesome/free-solid-svg-icons";
 
@@ -28,3 +28,5 @@ export function Account({nickName,Email,firstName,lastName}){
         </div>
     );
 }
+//text 길이중 가장긴것에 맞춰서 박스크기 조정
+//최소크기는 현재꺼로
