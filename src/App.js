@@ -11,6 +11,7 @@ import Community from "./Community/Community";
 import Create from "./Community/Create";
 import Daljak from "./Daljak/Daljak";
 import DaljakDetail from "./Daljak/DaljakDetail";
+import Test from "./Daljak/Test";
 import Home from "./Routes/Home";
 import MyPage from "./Routes/Mypage";
 

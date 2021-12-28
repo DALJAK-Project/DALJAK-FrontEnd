@@ -14,7 +14,7 @@ function Daljak_Center({ title, images, showSlide }) {
     infinite: true,
     speed: 500,
     slidesToShow: showSlide,
-    slidesToScroll: 1,
+    slidesToScroll: showSlide,
   };
   const BoxStyle = {
     width: `${250 * showSlide + 30}px`,
@@ -28,15 +28,7 @@ function Daljak_Center({ title, images, showSlide }) {
         </div>
 
         <div style={BoxStyle}>
-          {/* <FontAwesomeIcon
-            icon={faChevronCircleLeft}
-            style={{ color: "#816afe" }}
-          /> */}
           <Slider {...settings}>{cards}</Slider>
-          {/* <FontAwesomeIcon
-            icon={faChevronCircleRight}
-            style={{ color: "#816afe" }}
-          /> */}
         </div>
       </div>
     </div>

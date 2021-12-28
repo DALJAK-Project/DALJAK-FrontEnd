@@ -1,13 +1,15 @@
 import React from "react";
-import "../css/Home/header-bar.css";
+// import "../css/Home/header-bar.css";
 // import '../css/Home/home-box.css';
 // import '../css/Home/header-accessories.css';
 // import '../css/Home/header-cardbox.css';
-import "../css/Daljak/daljak_home.css";
+// import "../css/Daljak/daljak_home.css";
 // import '../css/Home/font.css';
-import "../css/Daljak/all.css";
+// import "../css/Daljak/all.css";
 import "../img/daljak-deco.png";
-import { Daljak_Center } from "./DaljakComponents";
+// import { Daljak_Center } from "./DaljakComponents";
+import Daljak_Center from "./Test";
+
 import Nav from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -72,21 +74,21 @@ export default function Daljak() {
           title="IT"
           images={imgNSList}
           boxName="it"
-          showSlide={5}
+          showSlide={4}
         />
         <Daljak_Center
           key="science"
           title="자연과학"
           images={imgNSList}
           boxName="science"
-          showSlide={5}
+          showSlide={4}
         />
         <Daljak_Center
           key="act"
           title="예체능"
           images={imgACTList}
           boxName="act"
-          showSlide={7}
+          showSlide={5}
         />
         <img
           className="daljak__box__img__b"

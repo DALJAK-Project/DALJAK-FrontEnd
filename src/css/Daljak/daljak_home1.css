@@ -1,0 +1,240 @@
+.daljak__deco {
+    display: inline-block;
+    position: absolute;
+    top: 189.98px;
+}
+
+.daljak__box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.daljak__box__img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 90px;
+    z-index: -99999;
+}
+
+.daljak__box__img__b {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 1900px;
+    right: 0;
+    z-index: -99999;
+}
+
+.daljak__box--title {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.daljak__box--desc {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 5px;
+}
+
+.daljak__box--it {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daljak__box--cardlist {
+    display: flex;
+    align-items: center;
+}
+
+.daljak__box--cardlist div {
+    margin-left: 15px;
+}
+
+.daljak__box--cardlist--card {
+    margin-top: 20px;
+    width: 280px;
+    height: 180px;
+    border-radius: 16px;
+}
+
+.fa-play-circle {
+    position: relative;
+    right: 17px;
+}
+
+.daljak__box--science {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.daljak__center:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+}
+
+.daljak__center:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+}
+
+.daljak__center:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -150px;
+}
+
+.daljak__center:nth-child(4) .daljak__box--text {
+    margin-left: 11%;
+}
+
+.daljak__box--act {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.daljak__box--it--text {
+    width: 34%;
+    position: relative;
+    left: 14%;
+    align-items: flex-end;
+}
+
+.daljak__box--it--title {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.daljak__box--cardlist--grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.daljak__box--cardlist--grid div {
+    padding: 0 100px 20px 100px;
+}
+
+.daljak__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.daljak__category--box {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.daljak__box--it--text--category {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    margin-left: 12%;
+}
+
+.daljak__box--cardlist--today {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.daljak__category--box--today {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    margin-left: 12%;
+}
+
+.daljak__box--cardlist--card--today {
+    margin-top: 20px;
+    border-radius: 16px;
+    display: flex;
+}
+
+.daljak__box--cardlist--card--today--text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.daljak__box--cardlist--card--today--textbox {
+    margin-left: 25px;
+}
+
+.daljak__box--cardlist--card--today--title {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.daljak__box--cardlist--card--today--date {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    /* identical to box height */
+    text-align: right;
+    /* Neutral/$gray-300 :: #999999 */
+    color: #999999;
+}
+
+.daljak__box--cardlist--card--today--desc {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+.daljak__deco--bottom {
+    display: inline-block;
+    position: absolute;
+    right: 18%;
+}
+
+@media screen and (max-width: 1800px) {
+    .daljak__box--cardlist--grid div {
+        padding: 0 80px 20px 80px;
+    }
+    .daljak__box--it--text--category {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding-bottom: 20 px;
+    }
+    .daljak__category--box--today {
+        width: 100%;
+        margin-top: 80 px;
+        display: flex;
+        position: relative;
+        left: 7%;
+    }
+    .daljak__deco--bottom {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+    }
+}
