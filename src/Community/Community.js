@@ -6,6 +6,7 @@ import Search from "./Search";
 import Nav from "../components/Nav";
 import "../css/community/community__topbox.css";
 import axios from "axios";
+import styled from "styled-components";
 
 class Community extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ class Community extends Component {
       data: 1,
     };
   }
+  // 클릭하면 색바뀌는 로직
 
   render() {
     const img_block = ["act-a.png", "act-b.png", "act-c.png"];
@@ -21,25 +23,26 @@ class Community extends Component {
     return (
       <div className="App">
         <div>
-          <Nav></Nav>
-          <Box></Box>
+          <Nav> </Nav> <Box> </Box>{" "}
           {/* <div>
-            {this.state.content_a.map((section, index) => (
-              <Recent
-                key={section.key}
-                title={section.title}
-                desc={section.desc}
-                date={section.date}
-              ></Recent>
-            ))}
-          </div> */}
-          <Recent></Recent>
+                                            {this.state.content_a.map((section, index) => (
+                                              <Recent
+                                                key={section.key}
+                                                title={section.title}
+                                                desc={section.desc}
+                                                date={section.date}
+                                              ></Recent>
+                                            ))}
+                                          </div> */}{" "}
+          <Recent> </Recent>{" "}
           <Search
             title="HTML"
             desc="HTML is HyperText Markup Language."
-          ></Search>
-          <Posts images={img_block} images_none={img_none}></Posts>
-        </div>
+          ></Search>{" "}
+          <Posts images={img_block} images_none={img_none}>
+            {" "}
+          </Posts>{" "}
+        </div>{" "}
       </div>
     );
   }

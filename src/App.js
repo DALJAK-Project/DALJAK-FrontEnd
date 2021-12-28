@@ -2,16 +2,17 @@ import React from "react";
 import {
   HashRouter,
   Route,
-  Routes,
+  Switch,
   BrowserRouter,
   Router,
-  Switch,
+  Routes,
 } from "react-router-dom";
 import Community from "./Community/Community";
 import Create from "./Community/Create";
 import Daljak from "./Daljak/Daljak";
 import DaljakDetail from "./Daljak/DaljakDetail";
 import Home from "./Routes/Home";
+import MyPage from "./Routes/Mypage";
 
 // App.js에 있던 Aladin, LionKing, SpiderMan을
 // Components/Routes.js 로 이동
@@ -27,11 +28,11 @@ export default () => (
       <Route path="/daljak" element={<Daljak />} />
       <Route path="/daljak/detail" element={<DaljakDetail />} />
       <Route path="/daljak/detail" element={<DaljakDetail />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
 
       <Route path="/create" element={<Create />} />
-      <Route path="/about" element={<Community />} exact={true} />
-      <Route path="/" element={<Community />} />
+      <Route path="/my" element={<MyPage />} />
+      <Route path="/community" element={<Community />} />
     </Routes>
   </BrowserRouter>
 );

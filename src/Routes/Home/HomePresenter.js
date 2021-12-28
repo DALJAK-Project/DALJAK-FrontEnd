@@ -8,7 +8,7 @@ import Nav from "../../components/Nav";
 function HomePresenter() {
   return (
     <div>
-      <Nav />
+      <Nav></Nav>
       <Box />
       <Cardbox />
       <Accessories />

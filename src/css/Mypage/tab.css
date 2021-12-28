@@ -2,11 +2,15 @@ body {
     height: 150vh;
 }
 
+a {
+    text-decoration: none;
+}
+
 .tab-wrap {
-    margin-top: 5%;
+    margin-top: 10%;
     display: flex;
-    width: 80%;
-    margin-left: 5%;
+    justify-content: center;
+    margin-left: 20%;
 }
 
 .tab {

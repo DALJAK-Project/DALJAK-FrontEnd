@@ -6,17 +6,16 @@ import "../css/Home/header-bar.css";
 import "../css/Daljak/daljak_home.css";
 // import '../css/Home/font.css';
 import "../css/Daljak/all.css";
-
-
-
-import {Daljak_Center} from './DaljakComponents';
-
+import "../img/daljak-deco.png";
+import { Daljak_Center } from "./DaljakComponents";
+import Nav from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
   faChevronCircleLeft,
   faChevronCircleRight,
 } from "@fortawesome/free-solid-svg-icons";
+
 export default function Daljak() {
   const imgITList = [
     "Rectangle-a.png",
@@ -61,14 +60,20 @@ export default function Daljak() {
   ];
   return (
     <div>
-      <Nav />
-
+      <Nav></Nav>
       <div className="daljak__box">
-        <Daljak_Center 
-        key="it" title="IT" 
-        images={imgITList} 
-        boxName="it" 
-        showSlide={5}/>
+        <img
+          className="daljak__box__img"
+          src={require(`../img/daljak-deco.png`).default}
+          alt=""
+        />
+        <Daljak_Center
+          key="it"
+          title="IT"
+          images={imgNSList}
+          boxName="it"
+          showSlide={5}
+        />
         <Daljak_Center
           key="science"
           title="자연과학"
@@ -82,6 +87,11 @@ export default function Daljak() {
           images={imgACTList}
           boxName="act"
           showSlide={7}
+        />
+        <img
+          className="daljak__box__img__b"
+          src={require(`../img/daljak-deco_b.png`).default}
+          alt=""
         />
         <Daljak_Catagory key="categoty" images={moreImg} />
         <DaljakToday key="today" images={todayImg} />
@@ -166,29 +176,29 @@ function DaljakTodayComponent({ imgUrl, title, date, desc }) {
     </div>
   );
 }
-function Nav() {
-  return (
-    <div>
-      <nav className="header-bar">
-        <div className="header-bar__menu">
-          <ul>
-            <li>Home</li>
-            <li>다른달작</li>
-            <li>내달작</li>
-            <li>커뮤니티</li>
-          </ul>
-        </div>
-        <div className="header-bar__login">
-          <div className="header-bar__signup">
-            <div className="header-bar__signup--square"></div>
-            <span className="header-bar__signup--text">Sign up</span>
-          </div>
-          <span className="header-bar__login--text">Log in</span>
-          <div className="header-bar__login--profile">
-            <i className="far fa-user-circle fa-2x"></i>
-          </div>
-        </div>
-      </nav>
-    </div>
-  );
-}
+// function Nav() {
+//   return (
+//     <div>
+//       <nav className="header-bar">
+//         <div className="header-bar__menu">
+//           <ul>
+//             <li>Home</li>
+//             <li>다른달작</li>
+//             <li>내달작</li>
+//             <li>커뮤니티</li>
+//           </ul>
+//         </div>
+//         <div className="header-bar__login">
+//           <div className="header-bar__signup">
+//             <div className="header-bar__signup--square"></div>
+//             <span className="header-bar__signup--text">Sign up</span>
+//           </div>
+//           <span className="header-bar__login--text">Log in</span>
+//           <div className="header-bar__login--profile">
+//             <i className="far fa-user-circle fa-2x"></i>
+//           </div>
+//         </div>
+//       </nav>
+//     </div>
+//   );
+// }

@@ -57,6 +57,10 @@ button:active {
     font-size: 20px;
     line-height: 29px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .community__box--category {
@@ -124,7 +128,6 @@ button:active {
 .community__recent-whitebox {
     display: flex;
     overflow: hidden;
-    width: 40%;
 }
 
 .community_recent-whitebox--text {

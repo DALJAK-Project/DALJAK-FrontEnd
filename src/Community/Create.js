@@ -54,7 +54,8 @@ function Create() {
         <h1 class="community-create__text"> 커뮤니티 글쓰기 </h1>{" "}
         <div class="community-create__box">
           <form class="community-create__form" action="">
-            {/* 폼 class이름을 변경 */}
+            {" "}
+            {/* 폼 class이름을 변경 */}{" "}
             <p>
               <input
                 //   onSubmit={function (e) {
@@ -71,9 +72,10 @@ function Create() {
                 placeholder="제목"
               />
             </p>{" "}
-            {/* 이거 두개를 따로 만들어야한다 */} <div className=""></div>
+            {/* 이거 두개를 따로 만들어야한다 */} <div className=""> </div>{" "}
             <p>
-              {/* o 왜 같이 입력값이 나올까 */}
+              {" "}
+              {/* o 왜 같이 입력값이 나올까 */}{" "}
               <input
                 //   onSubmit={function (e) {
                 //     e.prventDefault();
@@ -116,30 +118,30 @@ function Create() {
                   onChange={onSelect}
                   value={index}
                 >
-                  <option value="xx">과를 선택해주세요</option>
-                  <option value="0">it융합</option>
-                  <option value="1">자연과학</option>
-                  <option value="2">인문</option>
-                  <option value="3">예체능 </option>
+                  <option value="xx"> 과를 선택해주세요 </option>{" "}
+                  <option value="0"> it융합 </option>{" "}
+                  <option value="1"> 자연과학 </option>{" "}
+                  <option value="2"> 인문 </option>{" "}
+                  <option value="3"> 예체능 </option>{" "}
                 </select>{" "}
               </div>{" "}
               {/* 메뉴박스들 */} {/* 무슨태그로..? */}{" "}
               {/* <DropdownMenu sign={this.state.dropdown}>
-                <Dropdown_box isToggle={this.state.isToggleOn}>
-                  <Dropdown
-                    data={this.state.menu}
-                    onChangeDropdwon={function (id) {
-                      this.setState({
-                        category_num: Number(id),
-                        isToggleOn:
-                          this.state.isToggleOn === "true" ? "false" : "true",
-                        dropdown: "+",
-                      });
-                      // 클릭하면 display none으로
-                    }.bind(this)}
-                  ></Dropdown>{" "}
-                </Dropdown_box>{" "}
-              </DropdownMenu>{" "} */}
+                                        <Dropdown_box isToggle={this.state.isToggleOn}>
+                                          <Dropdown
+                                            data={this.state.menu}
+                                            onChangeDropdwon={function (id) {
+                                              this.setState({
+                                                category_num: Number(id),
+                                                isToggleOn:
+                                                  this.state.isToggleOn === "true" ? "false" : "true",
+                                                dropdown: "+",
+                                              });
+                                              // 클릭하면 display none으로
+                                            }.bind(this)}
+                                          ></Dropdown>{" "}
+                                        </Dropdown_box>{" "}
+                                      </DropdownMenu>{" "} */}{" "}
             </p>{" "}
             {/* 클릭했을때 카테고리 이름 변경되게끔 */}{" "}
             {/* h 여기다 드롭다운 만들것이다 */}{" "}
@@ -172,13 +174,12 @@ function Create() {
               onClick={onClick}
               className="community-create__submit-button"
               key={index}
-            ></button>
+            ></button>{" "}
             {viewContent.map((element) => (
               <div key={inputContent.id}>
-                <h2>{element.title}</h2>
-                <div>{element.content}</div>
+                <h2> {element.title} </h2> <div> {element.content} </div>{" "}
               </div>
-            ))}
+            ))}{" "}
           </form>{" "}
         </div>{" "}
       </div>{" "}

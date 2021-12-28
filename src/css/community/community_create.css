@@ -11,6 +11,19 @@
     width: 100%;
 }
 
+.community__box--create {
+    align-items: center;
+    text-align: center;
+}
+
+.community__box--category--text--span span {
+    font-family: Heebo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+}
+
 .community-create__text {
     display: flex;
     justify-content: center;

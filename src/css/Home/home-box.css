@@ -19,11 +19,13 @@ body {
     z-index: -9999;
     width: 100%;
 }
+
 .Account-overview__title {
     font-size: 30px;
     font-weight: 900;
     justify-content: center;
 }
+
 .home-box__img {
     position: absolute;
     width: 306px;
@@ -35,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 150px;
+    top: 70px;
 }
 
 .home-box__right {
@@ -192,7 +194,7 @@ body {
 .home-box__dot {
     display: flex;
     justify-content: center;
-    margin-top: -40px;
+    margin-top: -80px;
     margin-left: 40px;
     position: relative;
     /* left: 30%; */
@@ -200,6 +202,15 @@ body {
 
 .v10 {
     background: #c5c5c5;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.v10:first-child {
+    background: black;
     width: 26px;
     height: 24px;
     opacity: 1;
@@ -225,7 +236,7 @@ body {
 
 .home-box__review--white--titlebox {
     display: flex;
-    height:60px;
+    height: 60px;
     width: 100%;
     justify-content: space-between;
 }

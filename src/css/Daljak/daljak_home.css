@@ -8,9 +8,41 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 100px;
+}
+
+.daljak__box__img {
     position: absolute;
-    top: 204.98px;
-    width: 100%;
+    width: 500px;
+    height: 500px;
+    top: 90px;
+    z-index: -99999;
+}
+
+.daljak__box__img__b {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: 1900px;
+    right: 0;
+    z-index: -99999;
+}
+
+.daljak__box--title {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.daljak__box--desc {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 5px;
 }
 
 .daljak__box--it {
@@ -47,9 +79,26 @@
     margin-top: 80px;
 }
 
-.daljak__center {
+.daljak__center:nth-child(2) {
     display: flex;
     justify-content: center;
+    margin-bottom: -100px;
+}
+
+.daljak__center:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+}
+
+.daljak__center:nth-child(4) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -150px;
+}
+
+.daljak__center:nth-child(4) .daljak__box--text {
+    margin-left: 11%;
 }
 
 .daljak__box--act {
@@ -97,11 +146,10 @@
 }
 
 .daljak__box--it--text--category {
-    width: 40%;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     padding-bottom: 20px;
+    margin-left: 12%;
 }
 
 .daljak__box--cardlist--today {
@@ -114,8 +162,7 @@
     width: 100%;
     margin-top: 80px;
     display: flex;
-    position: relative;
-    left: 17%;
+    margin-left: 12%;
 }
 
 .daljak__box--cardlist--card--today {

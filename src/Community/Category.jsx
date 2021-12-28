@@ -25,9 +25,9 @@ class Category extends Component {
     return (
       <div class="community__box--category">
         <div class="community__box--category--text--a">
-          <div>
+          <div className="community__box--category--text--span">
             {" "}
-            <span>it</span>
+            <span>IT </span>
             <span>자연</span>
             <span>사회</span>
             <span>인문</span>
